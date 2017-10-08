@@ -17,9 +17,18 @@ $app = new \Slim\App($config);
 
 
 $app->get('/', function (Request $request, Response $response) {
-    $name = $request->getAttribute('name');
-    $response->getBody()->write("Hello world ". $this->get('settings')['db']['host']);
-    return $response;
+    //$response->getBody()->write("Hello world ". $this->get('settings')['db']['host']);
+    require_once('db.php');
+
+    $query='select * from products';
+    $result = $mysqli->query($query);
+
+    $data = null;
+    while($row = $result->fetch_assoc()) {
+        $data[]=$row;
+    }
+
+    echo json_encode($data);
 });
 
 $app->get('/by_price', function (Request $request, Response $response) {

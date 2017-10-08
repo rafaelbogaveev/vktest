@@ -13,7 +13,7 @@ $config = [
         'db' => [
             'host' => 'localhost',
             'user' => 'root',
-            'password' => 'root',
+            'password' => '1234',
             'dbname' => 'stock'
         ]
     ]
