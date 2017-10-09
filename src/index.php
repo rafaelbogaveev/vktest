@@ -17,8 +17,8 @@ $app = new \Slim\App($config);
 
 
 $app->get('/', function (Request $request, Response $response) {
-    //$response->getBody()->write("Hello world ". $this->get('settings')['db']['host']);
     require_once('db.php');
+    //require_once ('memcached.php');
 
     $query='select * from products';
     $result = $mysqli->query($query);
@@ -28,14 +28,27 @@ $app->get('/', function (Request $request, Response $response) {
         $data[]=$row;
     }
 
-    echo json_encode($data);
+
+    $memcached = new Memcached();
+    $memcached->addServer('localhost', 11211) or die ("Не могу подключиться к memcached");
+    echo 'version:'. $memcached->getVersion();
+    $memcached->set('key', $data) or die('Ошибка при сохранении данных');
+
+
+    //echo json_encode($memcached->get('key'));
 });
 
-$app->get('/by_price', function (Request $request, Response $response) {
-    $name = $request->getAttribute('name');
-    $response->getBody()->write("Sorted by price");
+$app->post('add', function (Request $request, Response $response){
 
-    return $response;
+});
+
+
+$app->put('/edit/', function (Request $request, Response $response) {
+
+});
+
+$app->delete('/delete/', function (Request $request, Response $response){
+
 });
 
 

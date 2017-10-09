@@ -8,4 +8,4 @@
 global $config;
 
 $db = $config['settings']['db'];
-$mysqli = new mysqli($db['host'], $db['user'], $db['password'], $db['dbname']);
+$mysqli = new mysqli($db['host'], $db['user'], $db['password'], $db['dbname']) or die('Cannot connect to database');
