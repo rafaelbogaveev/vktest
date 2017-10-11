@@ -15,6 +15,20 @@ $config = [
             'user' => 'root',
             'passward' => 'root',
             'dbname' => 'stock'
-        ]
+        ],
+
+        'memcached'=>[
+            'host' => '127.0.0.1',
+            'port' => 11211,
+        ],
+
+        'logger' => [
+            'name' => 'vk-test',
+            'level' => Monolog\Logger::DEBUG,
+            'path' => __DIR__ . '/../logs/app.log',
+        ],
+
+
+        'page_size' => 30,
     ]
 ];
