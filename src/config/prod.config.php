@@ -13,7 +13,7 @@ $config = [
         'db' => [
             'host' => 'localhost',
             'user' => 'root',
-            'passward' => 'root',
+            'password' => 'root',
             'dbname' => 'stock'
         ],
 
@@ -25,7 +25,7 @@ $config = [
         'logger' => [
             'name' => 'vk-test',
             'level' => Monolog\Logger::DEBUG,
-            'path' => __DIR__ . '/../logs/app.log',
+            'path' => __DIR__ . '/../../logs/app.log',
         ],
 
 

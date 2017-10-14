@@ -25,6 +25,10 @@ $block_size = $config['settings']['block_size'];
  */
 function getProducts($lastId, $limit, $offset, $orderField, $orderType){
 
+    updateProduct(1,'watermellon', 'superFruit', 6.7, null);
+    insertProduct('apple', 'tasty fruit', 6.7, null);
+
+
     if ('price'== $orderField){
         return getProductsSortedByPrice($limit, $offset, $orderType);
     }

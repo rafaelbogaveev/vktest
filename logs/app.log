@@ -1,0 +1,35 @@
+[2017-10-14 00:38:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"8b13524"}
+[2017-10-14 01:04:08] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"be4cfa0"}
+[2017-10-14 01:04:09] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"44b59b4"}
+[2017-10-14 01:07:34] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"000850c"}
+[2017-10-14 01:53:48] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"8ddb56e"}
+[2017-10-14 01:54:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"3c03552"}
+[2017-10-14 01:54:15] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"9d355ee"}
+[2017-10-14 01:58:46] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"f38a8c6"}
+[2017-10-14 02:09:15] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"e15f93f"}
+[2017-10-14 02:09:17] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"b17623e"}
+[2017-10-14 02:11:16] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"a4bd12e"}
+[2017-10-14 02:11:45] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"eda31e4"}
+[2017-10-14 02:11:46] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"14ccf65"}
+[2017-10-14 02:13:36] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"6cc9148"}
+[2017-10-14 02:21:27] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"f3b85c9"}
+[2017-10-14 02:22:21] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"b1247e5"}
+[2017-10-14 02:23:23] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"3ec431e"}
+[2017-10-14 02:23:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"82c86d1"}
+[2017-10-14 02:24:13] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"7915d5f"}
+[2017-10-14 02:24:30] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"301016e"}
+[2017-10-14 02:24:31] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"bc5ce03"}
+[2017-10-14 02:25:19] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"ecab741"}
+[2017-10-14 02:25:36] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"23ff67c"}
+[2017-10-14 02:30:05] vk-test.INFO: Update product. SQL: UPDATE products SET name=orange, description=superFruit, price=6.2, url= where id=1 [] {"uid":"e93b487"}
+[2017-10-14 02:30:05] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"e93b487"}
+[2017-10-14 02:37:29] vk-test.INFO: Update product. SQL: UPDATE products SET name='orange', description='superFruit', price=6.2, url=null where id=1 [] {"uid":"9ff8670"}
+[2017-10-14 02:37:29] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"9ff8670"}
+[2017-10-14 02:38:47] vk-test.INFO: Update product. SQL: UPDATE products SET name='orange', description='superFruit', price=6.7, url=null where id=1 [] {"uid":"af313ec"}
+[2017-10-14 02:38:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"af313ec"}
+[2017-10-14 02:41:40] vk-test.INFO: Update product. SQL: UPDATE products SET name='orange', description='superFruit', price=6.7, url=null where id=1 [] {"uid":"b51b963"}
+[2017-10-14 02:41:40] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('apple', 'tasty fruit', 6.7, null) [] {"uid":"b51b963"}
+[2017-10-14 02:41:40] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"b51b963"}
+[2017-10-14 03:25:10] vk-test.INFO: Update product. SQL: UPDATE products SET name='watermellon', description='superFruit', price=6.7, url=null WHERE id=1 [] {"uid":"5ecd0d6"}
+[2017-10-14 03:25:10] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('apple', 'tasty fruit', 6.7, null) [] {"uid":"5ecd0d6"}
+[2017-10-14 03:25:10] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 1000 [] {"uid":"5ecd0d6"}

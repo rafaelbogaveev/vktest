@@ -16,12 +16,12 @@
  * @param $orderType
  * @return array of db rows
  */
-
 function getProductsSortedById($lastId, $limit, $orderType){
-    require_once ('core/db.php');
+    require (__DIR__.'/../core/db.php');
 
     global $config;
     global $app;
+
     // maximum amount of items in block of products
     $block_size = $config['settings']['block_size'];
     // resolving logger
@@ -53,10 +53,17 @@ function getProductsSortedById($lastId, $limit, $orderType){
  * @return array of db rows
  */
 function getProductsSortedByPrice($limit, $offset, $orderType) {
-    require_once ('core/db.php');
+    require ('core/db.php');
+    global $app;
+
+    // resolving logger
+    $logger = $app->getContainer()->get('logger');
 
     $order = 'desc'==$orderType ? $orderType: 'asc';
-    $result = $mysqli->query('Select * From products order by price '.$order.' limit '.$block_size.' offset '.$offset);
+    $query = 'Select * From products order by price '.$order.' limit '.$block_size.' offset '.$offset;
+
+    $logger->info("Fetching list of products sorted by price from database. SQL: ".$query);
+    $result = $mysqli->query($query);
 
     $data=null;
     while($row = $result->fetch_assoc()) {
@@ -64,4 +71,72 @@ function getProductsSortedByPrice($limit, $offset, $orderType) {
     }
 
     return $data;
+}
+
+
+/**
+ * Returns product by identifier
+ *
+ * @param $id - identifier of product
+ */
+function getProductById($id){
+    require (__DIR__.'/../core/db.php');
+    global $app;
+
+    $query = 'Select * From products where id='.$id;
+
+    $logger = $app->getContainer()->get('logger');
+    $logger->info("Get product by id. SQL: ".$query);
+
+    $result = $mysqli->query($query);
+    $row = $result->fetch_assoc();
+
+    return $row;
+}
+
+
+function updateProduct($id, $name, $description, $price, $url)
+{
+    require(__DIR__ . '/../core/db.php');
+    global $app;
+
+    $queryFormat = 'UPDATE products SET name=%s, description=%s, price=%s, url=%s WHERE id=%d';
+    $query = sprintf($queryFormat,
+        $name == null ? 'null' : '\'' . $name . '\'',
+        $description == null ? 'null' : '\'' . $description . '\'',
+        $price == null ? 'null' : $price,
+        $url == null ? 'null' : '\'' . $url . '\'',
+        $id);
+
+    $logger = $app->getContainer()->get('logger');
+    $logger->info("Update product. SQL: " . $query);
+
+    return $mysqli->query($query) === TRUE;
+}
+
+/**
+ *
+ *
+ * @param $name
+ * @param $description
+ * @param $price
+ * @param $url
+ */
+function insertProduct($name, $description, $price, $url)
+{
+    require(__DIR__ . '/../core/db.php');
+    global $app;
+
+    $queryFormat = 'INSERT INTO products (name, description, price, url) VALUES (%s, %s, %s, %s)';
+    $query = sprintf($queryFormat,
+        $name == null ? 'null': '\''.$name.'\'',
+        $description == null ? 'null': '\''.$description.'\'',
+        $price == null ? 'null': $price,
+        $url==null ? 'null': '\''.$url.'\'',
+        $url==null ? 'null': $url);
+
+    $logger = $app->getContainer()->get('logger');
+    $logger->info("Insert product. SQL: " . $query);
+
+    return $mysqli->query($query) === TRUE;
 }
