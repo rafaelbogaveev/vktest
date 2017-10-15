@@ -3,3 +3,4 @@ dev.config.php
 .idea/inspectionProfiles/
 vendor/
 src/logs/*
+src/templates/cache/*

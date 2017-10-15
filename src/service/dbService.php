@@ -114,7 +114,6 @@ function updateProduct($id, $name, $description, $price, $url)
 
     $logger = $app->getContainer()->get('logger');
     $logger->info("Update product. SQL: " . $query);
-    $mysqli->autocommit(FALSE);
 
     return $mysqli->query($query) === TRUE;
 }

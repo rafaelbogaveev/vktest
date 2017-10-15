@@ -8,7 +8,7 @@
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
-//use \domain\ResponseDto as ResponseData;
+
 
 
 class ResponseDto
@@ -18,23 +18,10 @@ class ResponseDto
     public $lastId;
 
     public $total;
-
-    /*public function __construct($products, $lastId, $total)
-    {
-        $this->products = $products;
-        $this->lastId = $lastId;
-        $this->total = $total;
-    }*/
 }
 
 
 $app->get('/', function (Request $request, Response $response){
-    $lastId=$request->getQueryParams()['lastId'];
-    $limit=$request->getQueryParams()['limit'];
-    $offset=$request->getQueryParams()['offset'];
-    $orderField=$request->getQueryParams()['orderField'];
-    $orderType=$request->getQueryParams()['orderType'];
-
     $this->view->render($response, 'index.html', []);
 });
 
@@ -46,14 +33,11 @@ $app->get('/api/list', function (Request $request, Response $response) {
     $orderField=$request->getQueryParams()['orderField'];
     $orderType=$request->getQueryParams()['orderType'];
 
-    //$logger->info("ok");
     $products = getProducts($lastId, $limit, $offset, $orderField, $orderType);
     $data = new ResponseDto();
     $data->products=$products;
     $data->lastId=3;
     $data->total=3;
-
-    //$logger->info("ok");
 
     header("Content-Type: application/json");
     return json_encode($data);
@@ -72,16 +56,25 @@ $app->post('/api/add', function (Request $request, Response $response){
 
     save(null, $name, $description, $price, $url);
 
-    return json_encode(array("status" => "success", "code" => 1));
+    return json_encode(array("status" => "200", "code" => 1));
 });
 
 
 $app->put('/api/edit/{id}', function (Request $request, Response $response) {
+    $id = $request->getAttribute('id');
+    $name=$request->getParam('name');
+    $description=$request->getParam('description');
+    $price=$request->getParam('price');
+    $url=$request->getParam('url');
 
+    save($id, $name, $description, $price, $url);
+
+    return json_encode(array("status" => "200", "code" => 1));
 });
 
 $app->delete('/api/delete/{id}', function (Request $request, Response $response){
-    $route = $request->getAttribute('route');
-    $id = $route->getArgument('id');
+    $id = $request->getAttribute('id');
     delete($id);
+
+    return json_encode(array("status" => "200", "code" => 1));
 });

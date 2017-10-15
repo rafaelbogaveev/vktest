@@ -110,3 +110,51 @@
 [2017-10-15 12:04:29] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('potato', null, 5.7, null) [] {"uid":"f88f724"}
 [2017-10-15 12:04:29] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"dff3d55"}
 [2017-10-15 12:04:37] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"0e7f724"}
+[2017-10-15 12:57:48] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"2891beb"}
+[2017-10-15 13:01:13] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('banana', 'test', 7.2, null) [] {"uid":"72827d8"}
+[2017-10-15 13:01:14] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('banana', 'test', 7.2, null) [] {"uid":"77ab845"}
+[2017-10-15 13:01:32] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"6c09a60"}
+[2017-10-15 13:04:15] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('banana', 'test', 7.2, null) [] {"uid":"513cb17"}
+[2017-10-15 13:04:15] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"8cbb366"}
+[2017-10-15 13:04:56] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('test', 'test', 21, 'test') [] {"uid":"6fca665"}
+[2017-10-15 13:05:52] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"be122cd"}
+[2017-10-15 13:07:31] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"d57942f"}
+[2017-10-15 13:08:09] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"b968489"}
+[2017-10-15 13:09:58] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"b68c5c2"}
+[2017-10-15 13:10:16] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('dsdds', null, 32, null) [] {"uid":"c1d1624"}
+[2017-10-15 13:10:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"d32e116"}
+[2017-10-15 13:13:11] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"9266df0"}
+[2017-10-15 13:14:19] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"faec1f6"}
+[2017-10-15 13:22:07] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"4d56ee1"}
+[2017-10-15 13:24:42] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"4730746"}
+[2017-10-15 13:30:50] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"f960e95"}
+[2017-10-15 13:31:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"5c43101"}
+[2017-10-15 13:34:01] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"de2398a"}
+[2017-10-15 13:34:19] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES (null, 'tasty fruit', 6.7, 'test3') [] {"uid":"4b9fd87"}
+[2017-10-15 13:34:25] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"6dc209c"}
+[2017-10-15 13:39:08] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"68d9d94"}
+[2017-10-15 13:39:17] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"d52eb24"}
+[2017-10-15 13:47:40] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"b7f40f3"}
+[2017-10-15 13:47:47] vk-test.INFO: Update product. SQL: UPDATE products SET name=null, description='tasty fruit', price=6.7, url='test3' WHERE id=2 [] {"uid":"ebbcefb"}
+[2017-10-15 13:47:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"ed50de6"}
+[2017-10-15 13:48:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"8829aca"}
+[2017-10-15 13:48:59] vk-test.INFO: Update product. SQL: UPDATE products SET name='apple', description='tasty fruit', price=6.7, url='test3' WHERE id=2 [] {"uid":"5a9e3c5"}
+[2017-10-15 13:48:59] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"101d2af"}
+[2017-10-15 13:50:10] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"fc23924"}
+[2017-10-15 13:50:18] vk-test.INFO: Update product. SQL: UPDATE products SET name='apple', description='tasty fruit', price=6.7, url='test4' WHERE id=2 [] {"uid":"6ad7649"}
+[2017-10-15 13:50:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"080b868"}
+[2017-10-15 13:51:42] vk-test.INFO: Update product. SQL: UPDATE products SET name='apple', description='tasty fruit', price=6.7, url='test4' WHERE id=2 [] {"uid":"1ddd2a2"}
+[2017-10-15 13:51:42] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"1241af5"}
+[2017-10-15 13:51:54] vk-test.INFO: Update product. SQL: UPDATE products SET name='apple', description='tasty fruit', price=6.9, url='test5' WHERE id=2 [] {"uid":"feb86c7"}
+[2017-10-15 13:51:54] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"bf89a55"}
+[2017-10-15 13:53:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"8776ce2"}
+[2017-10-15 13:54:14] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"6ba3971"}
+[2017-10-15 13:54:22] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=14 [] {"uid":"429f0cf"}
+[2017-10-15 13:54:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"f1959d2"}
+[2017-10-15 13:54:25] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=13 [] {"uid":"642d785"}
+[2017-10-15 13:54:25] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"920501e"}
+[2017-10-15 13:55:13] vk-test.INFO: Update product. SQL: UPDATE products SET name='orange', description='juicy fruit', price=5.3, url='tes' WHERE id=5 [] {"uid":"6225e9a"}
+[2017-10-15 13:55:13] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 30 [] {"uid":"a2eeab0"}
+[2017-10-15 13:55:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"46374c8"}
+[2017-10-15 13:57:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"c75016a"}
+[2017-10-15 14:00:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"1d494d8"}

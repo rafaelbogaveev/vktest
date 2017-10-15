@@ -4,7 +4,7 @@ $( document ).ready(function() {
     var current_page = 1;
     var total_page = 0;
     var lastId=0;
-    var limit = 30;
+    var limit = 10;
     var offset = 0;
     var sortField='id';
     var sortType='asc';
@@ -56,7 +56,21 @@ $( document ).ready(function() {
                 offset: offset
             }
         }).done(function(data){
-            manageRow(data.data);
+            total_page = Math.ceil(data.total/limit);
+            current_page = page;
+
+            $('#pagination').twbsPagination({
+                totalPages: total_page,
+                visiblePages: current_page,
+                onPageClick: function (event, pageL) {
+                    page = pageL;
+                    if(is_ajax_fire != 0){
+                        getPageData();
+                    }
+                }
+            });
+
+            manageRow(data.products);
         });
     }
 
@@ -113,7 +127,7 @@ $( document ).ready(function() {
                 toastr.success('Item Created Successfully.', 'Success Alert', {timeOut: 5000});
             });
         }else{
-            alert('You are missing title or description.')
+            alert('You are missing name or price.')
         }
     });
 
@@ -124,11 +138,11 @@ $( document ).ready(function() {
 
         $.ajax({
             dataType: 'json',
-            type:'POST',
+            type:'DELETE',
             url: url + 'api/delete/' + id,
             //data:{id:id}
         }).done(function(data){
-            c_obj.remove();
+            //c_obj.remove();
             toastr.success('Item Deleted Successfully.', 'Success Alert', {timeOut: 5000});
             getPageData();
         });
@@ -139,9 +153,9 @@ $( document ).ready(function() {
     $("body").on("click",".edit-item",function(){
 
         var id = $(this).parent("td").data('id');
-        var name = $(this).parent("td").prev("td").prev("td").text();
-        var description = $(this).parent("td").prev("td").text();
-        var price = $(this).parent("td").prev("td").text();
+        var name = $(this).parent("td").prev("td").prev("td").prev("td").prev("td").text();
+        var description = $(this).parent("td").prev("td").prev("td").prev("td").text();
+        var price = $(this).parent("td").prev("td").prev("td").text();
         var imgUrl = $(this).parent("td").prev("td").text();
 
         $("#edit-item").find("input[name='id']").val(id);
@@ -166,16 +180,16 @@ $( document ).ready(function() {
         if(name != '' && !isNaN(price)){
             $.ajax({
                 dataType: 'json',
-                type:'POST',
+                type:'PUT',
                 url: url + form_action+'/'+id,
-                data:{title:name, description:description, price:price, url: imgUrl}
+                data:{name:name, description:description, price:price, url: imgUrl}
             }).done(function(data){
                 getPageData();
                 $(".modal").modal('hide');
-                toastr.success('Item Updated Successfully.', 'Success Alert', {timeOut: 5000});
+                toastr.success('Item Updated Successfully.', 'Success Alert', {timeOut: 3000});
             });
         }else{
-            alert('You are missing title or description.')
+            alert('You are missing name or price.')
         }
 
     });
