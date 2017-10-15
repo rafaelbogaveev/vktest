@@ -17,20 +17,16 @@
  * @return array of db rows
  */
 function getProductsSortedById($lastId, $limit, $orderType){
-    require (__DIR__.'/../core/db.php');
-
-    global $config;
+    require (__DIR__.'/../data/db.php');
     global $app;
 
-    // maximum amount of items in block of products
-    $block_size = $config['settings']['block_size'];
     // resolving logger
     $logger = $app->getContainer()->get('logger');
 
     $order = $orderType=='desc' ? $orderType: 'asc';
     $whereClause = null==$lastId ? '' : 'where id>'.$lastId;
 
-    $query = 'Select * From products '.$whereClause.' order by id '.$order.' limit '.$block_size;
+    $query = 'Select * From products '.$whereClause.' order by id '.$order.' limit '.$limit;
     $result = $mysqli->query($query);
 
     $logger->info("Fetching list of products sorted by id from database. SQL: ".$query);
@@ -53,14 +49,14 @@ function getProductsSortedById($lastId, $limit, $orderType){
  * @return array of db rows
  */
 function getProductsSortedByPrice($limit, $offset, $orderType) {
-    require ('core/db.php');
+    require (__DIR__.'/../data/db.php');
     global $app;
 
     // resolving logger
     $logger = $app->getContainer()->get('logger');
 
     $order = 'desc'==$orderType ? $orderType: 'asc';
-    $query = 'Select * From products order by price '.$order.' limit '.$block_size.' offset '.$offset;
+    $query = 'Select * From products order by price '.$order.' limit '.$limit.' offset '.$offset;
 
     $logger->info("Fetching list of products sorted by price from database. SQL: ".$query);
     $result = $mysqli->query($query);
@@ -80,7 +76,7 @@ function getProductsSortedByPrice($limit, $offset, $orderType) {
  * @param $id - identifier of product
  */
 function getProductById($id){
-    require (__DIR__.'/../core/db.php');
+    require (__DIR__ . '/../data/db.php');
     global $app;
 
     $query = 'Select * From products where id='.$id;
@@ -95,9 +91,17 @@ function getProductById($id){
 }
 
 
+/**
+ * @param $id
+ * @param $name
+ * @param $description
+ * @param $price
+ * @param $url
+ * @return bool
+ */
 function updateProduct($id, $name, $description, $price, $url)
 {
-    require(__DIR__ . '/../core/db.php');
+    require (__DIR__.'/../data/db.php');
     global $app;
 
     $queryFormat = 'UPDATE products SET name=%s, description=%s, price=%s, url=%s WHERE id=%d';
@@ -110,9 +114,11 @@ function updateProduct($id, $name, $description, $price, $url)
 
     $logger = $app->getContainer()->get('logger');
     $logger->info("Update product. SQL: " . $query);
+    $mysqli->autocommit(FALSE);
 
     return $mysqli->query($query) === TRUE;
 }
+
 
 /**
  *
@@ -124,7 +130,7 @@ function updateProduct($id, $name, $description, $price, $url)
  */
 function insertProduct($name, $description, $price, $url)
 {
-    require(__DIR__ . '/../core/db.php');
+    require (__DIR__.'/../data/db.php');
     global $app;
 
     $queryFormat = 'INSERT INTO products (name, description, price, url) VALUES (%s, %s, %s, %s)';
@@ -139,4 +145,39 @@ function insertProduct($name, $description, $price, $url)
     $logger->info("Insert product. SQL: " . $query);
 
     return $mysqli->query($query) === TRUE;
+}
+
+
+/**
+ * @param $id
+ * @return bool
+ */
+function deleteProduct($id){
+    require (__DIR__.'/../data/db.php');
+    global $app;
+
+    $query = 'Delete From products WHERE id='.$id;
+
+    $logger = $app->getContainer()->get('logger');
+    $logger->info("Insert product. SQL: " . $query);
+
+    return $mysqli->query($query) === TRUE;
+}
+
+
+/**
+ *
+ */
+function getProductsCount(){
+    require (__DIR__.'/../data/db.php');
+    global $app;
+
+    $query = 'Select count(id) From products';
+    $logger = $app->getContainer()->get('logger');
+    $logger->info("Get products count. SQL: " . $query);
+
+    $result = $mysqli->query($query);
+    $row = $result->fetch_assoc();
+
+    $row[0];
 }

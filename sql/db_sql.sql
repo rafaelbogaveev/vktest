@@ -7,3 +7,5 @@ CREATE TABLE stock.products (
   price double not null,
   url varchar(256)
 );
+
+CREATE INDEX products_price ON products(price);

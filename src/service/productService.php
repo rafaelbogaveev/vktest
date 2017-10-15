@@ -8,12 +8,8 @@
  * This file contains implementation for crud operations over products
  */
 
-require_once ('core/memcached.php');
-require_once ('dbService.php');
 
-global $config;
-// maximum amount of items in block of products
-$block_size = $config['settings']['block_size'];
+require_once ('dbService.php');
 
 
 /**
@@ -24,22 +20,35 @@ $block_size = $config['settings']['block_size'];
  * @param $orderType - type of sorting (asc, desc). 'desc' - sorting by desc, otherwise- sorting by asc
  */
 function getProducts($lastId, $limit, $offset, $orderField, $orderType){
+    require (__DIR__ . '/../data/db.php');
 
-    updateProduct(1,'watermellon', 'superFruit', 6.7, null);
-    insertProduct('apple', 'tasty fruit', 6.7, null);
-
-
-    if ('price'== $orderField){
+    if ('price' == $orderField){
         return getProductsSortedByPrice($limit, $offset, $orderType);
     }
 
     return getProductsSortedById($lastId, $limit, $orderType);
 }
 
-
-
-
-
-function getItemsAndCached(){
-
+/**
+ * @param $id
+ * @param $name
+ * @param $description
+ * @param $price
+ * @param $url
+ */
+function save($id, $name, $description, $price, $url){
+    if (@$id == null) {
+        insertProduct($name, $description, $price, $url);
+    }
+    else{
+        updateProduct($id, $name,$description, $price, $url);
+    }
 }
+
+function delete($id){
+    if ($id == null)
+        throw new Exception('Id cannot be null');
+
+    deleteProduct($id);
+}
+

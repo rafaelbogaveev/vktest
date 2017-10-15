@@ -8,7 +8,7 @@
 
 $config = [
     'settings' => [
-        'displayErrorDetails' => false,
+        'displayErrorDetails' => true,
 
         'db' => [
             'host' => 'localhost',
