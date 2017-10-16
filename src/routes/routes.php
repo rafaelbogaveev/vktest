@@ -27,17 +27,16 @@ $app->get('/', function (Request $request, Response $response){
 
 
 $app->get('/api/list', function (Request $request, Response $response) {
-    $lastId=$request->getQueryParams()['lastId'];
     $limit=$request->getQueryParams()['limit'];
     $offset=$request->getQueryParams()['offset'];
     $orderField=$request->getQueryParams()['orderField'];
     $orderType=$request->getQueryParams()['orderType'];
 
-    $products = getProducts($lastId, $limit, $offset, $orderField, $orderType);
+    $products = getProducts($limit, $offset, $orderField, $orderType);
     $data = new ResponseDto();
-    $data->products=$products;
-    $data->lastId=3;
-    $data->total=3;
+    $data->products = $products;
+    $data->lastId = end($products)['id'];
+    $data->total = getCount();
 
     header("Content-Type: application/json");
     return json_encode($data);

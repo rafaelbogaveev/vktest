@@ -19,14 +19,16 @@ require_once ('dbService.php');
  * @param $orderField - name of field that should be sorted. 'price' - sorting by price, otherwise-sorting by id
  * @param $orderType - type of sorting (asc, desc). 'desc' - sorting by desc, otherwise- sorting by asc
  */
-function getProducts($lastId, $limit, $offset, $orderField, $orderType){
+function getProducts($limit, $offset, $orderField, $orderType){
     require (__DIR__ . '/../data/db.php');
 
+    $order = $orderType=='desc' ? $orderType: 'asc';
+
     if ('price' == $orderField){
-        return getProductsSortedByPrice($limit, $offset, $orderType);
+        return getProductsSortedByPrice($limit, $offset, $order);
     }
 
-    return getProductsSortedById($lastId, $limit, $orderType);
+    return getProductsSortedById($limit, $offset, $order);
 }
 
 /**
@@ -52,3 +54,6 @@ function delete($id){
     deleteProduct($id);
 }
 
+function getCount(){
+    return getProductsCount();
+}

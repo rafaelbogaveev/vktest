@@ -3,8 +3,8 @@ $( document ).ready(function() {
     var page = 1;
     var current_page = 1;
     var total_page = 0;
-    var lastId=0;
-    var limit = 10;
+
+    var limit = 4;
     var offset = 0;
     var sortField='id';
     var sortType='asc';
@@ -19,19 +19,23 @@ $( document ).ready(function() {
             dataType: 'json',
             url: url+'api/list',
             data: {
-                lastId:lastId,
                 limit:limit,
-                offset: offset
+                offset: offset,
+                orderField: sortField,
+                orderType: sortType
             }
         }).done(function(data){
             total_page = Math.ceil(data.total/limit);
             current_page = page;
+            lastId=data.lastId;
 
             $('#pagination').twbsPagination({
                 totalPages: total_page,
                 visiblePages: current_page,
                 onPageClick: function (event, pageL) {
                     page = pageL;
+                    offset = (pageL-1) * limit;
+
                     if(is_ajax_fire != 0){
                         getPageData();
                     }
@@ -51,24 +55,15 @@ $( document ).ready(function() {
             dataType: 'json',
             url: url+'api/list',
             data: {
-                lastId:lastId,
                 limit:limit,
-                offset: offset
+                offset: offset,
+                orderField: sortField,
+                orderType: sortType
             }
         }).done(function(data){
             total_page = Math.ceil(data.total/limit);
             current_page = page;
-
-            $('#pagination').twbsPagination({
-                totalPages: total_page,
-                visiblePages: current_page,
-                onPageClick: function (event, pageL) {
-                    page = pageL;
-                    if(is_ajax_fire != 0){
-                        getPageData();
-                    }
-                }
-            });
+            lastId=data.lastId;
 
             manageRow(data.products);
         });
@@ -193,4 +188,30 @@ $( document ).ready(function() {
         }
 
     });
+
+
+    $('#productTable').DataTable({
+
+        "ordering": true,
+        columnDefs: [{
+            orderable: false,
+            targets: "no-sort"
+        }],
+        drawCallback: function(settings) {
+            var pagination = $(this).closest('.dataTables_wrapper').find('.dataTables_paginate');
+            pagination.toggle(false);
+        },
+        searching: false,
+        bInfo: false,
+        bLengthChange: false
+    });
+
+    $('#productTable').on('order.dt', function(component, arg2, arg3) {
+        sortType = arg3[0].dir;
+        sortField = arg3[0].col==0 ? 'id' : 'price';
+
+        getPageData();
+    });
+
+
 });

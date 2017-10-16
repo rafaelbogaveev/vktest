@@ -158,3 +158,459 @@
 [2017-10-15 13:55:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"46374c8"}
 [2017-10-15 13:57:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"c75016a"}
 [2017-10-15 14:00:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"1d494d8"}
+[2017-10-15 14:04:01] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"46e47d6"}
+[2017-10-15 14:06:30] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"28a9c8d"}
+[2017-10-15 14:06:30] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"28a9c8d"}
+[2017-10-15 14:07:41] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"7ea519e"}
+[2017-10-15 14:07:41] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"7ea519e"}
+[2017-10-15 14:07:58] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"0dae93c"}
+[2017-10-15 14:07:58] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"0dae93c"}
+[2017-10-15 14:08:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"a668db5"}
+[2017-10-15 14:08:47] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"a668db5"}
+[2017-10-15 14:11:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"5d6e72b"}
+[2017-10-15 14:11:51] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"5d6e72b"}
+[2017-10-15 14:11:51] vk-test.INFO: count:  [] {"uid":"5d6e72b"}
+[2017-10-15 14:13:44] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"56a5ea1"}
+[2017-10-15 14:13:44] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"56a5ea1"}
+[2017-10-15 14:13:44] vk-test.INFO: count: Array [] {"uid":"56a5ea1"}
+[2017-10-15 14:15:25] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"37e89e5"}
+[2017-10-15 14:15:25] vk-test.INFO: Get products count. SQL: Select count(id) From products [] {"uid":"37e89e5"}
+[2017-10-15 14:15:26] vk-test.INFO: count: Array [] {"uid":"37e89e5"}
+[2017-10-15 14:17:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"f1339f9"}
+[2017-10-15 14:17:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f1339f9"}
+[2017-10-15 14:17:22] vk-test.INFO: count: 12 [] {"uid":"f1339f9"}
+[2017-10-15 14:18:00] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"850d988"}
+[2017-10-15 14:18:00] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"850d988"}
+[2017-10-15 14:18:00] vk-test.INFO: count: 12 [] {"uid":"850d988"}
+[2017-10-15 14:19:23] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"8832243"}
+[2017-10-15 14:19:23] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"8832243"}
+[2017-10-15 14:19:23] vk-test.INFO: count: 12 [] {"uid":"8832243"}
+[2017-10-15 14:19:39] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"8c20d61"}
+[2017-10-15 14:19:39] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"8c20d61"}
+[2017-10-15 14:19:39] vk-test.INFO: count: 12 [] {"uid":"8c20d61"}
+[2017-10-15 14:44:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"abb8d19"}
+[2017-10-15 14:44:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"abb8d19"}
+[2017-10-15 14:44:06] vk-test.INFO: count: 12 [] {"uid":"abb8d19"}
+[2017-10-15 14:44:08] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"4271a83"}
+[2017-10-15 14:44:08] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"4271a83"}
+[2017-10-15 14:44:08] vk-test.INFO: count: 12 [] {"uid":"4271a83"}
+[2017-10-15 14:44:48] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"2ae00cb"}
+[2017-10-15 14:44:48] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2ae00cb"}
+[2017-10-15 14:44:48] vk-test.INFO: count: 12 [] {"uid":"2ae00cb"}
+[2017-10-15 14:45:00] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"67f6f08"}
+[2017-10-15 14:45:00] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"67f6f08"}
+[2017-10-15 14:45:00] vk-test.INFO: count: 12 [] {"uid":"67f6f08"}
+[2017-10-15 14:47:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"8455fc8"}
+[2017-10-15 14:47:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"8455fc8"}
+[2017-10-15 14:47:22] vk-test.INFO: count: 12 [] {"uid":"8455fc8"}
+[2017-10-15 14:50:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"30d6748"}
+[2017-10-15 14:50:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"30d6748"}
+[2017-10-15 14:50:22] vk-test.INFO: count: 12 [] {"uid":"30d6748"}
+[2017-10-15 14:50:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"4dd377b"}
+[2017-10-15 14:50:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"4dd377b"}
+[2017-10-15 14:50:22] vk-test.INFO: count: 12 [] {"uid":"4dd377b"}
+[2017-10-15 14:50:59] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"7ba4299"}
+[2017-10-15 14:50:59] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"7ba4299"}
+[2017-10-15 14:50:59] vk-test.INFO: count: 12 [] {"uid":"7ba4299"}
+[2017-10-15 14:51:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"2862526"}
+[2017-10-15 14:51:20] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2862526"}
+[2017-10-15 14:51:20] vk-test.INFO: count: 12 [] {"uid":"2862526"}
+[2017-10-15 14:51:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"5cd822d"}
+[2017-10-15 14:51:51] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"5cd822d"}
+[2017-10-15 14:51:51] vk-test.INFO: count: 12 [] {"uid":"5cd822d"}
+[2017-10-15 14:52:59] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"0086ad5"}
+[2017-10-15 14:52:59] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0086ad5"}
+[2017-10-15 14:52:59] vk-test.INFO: count: 12 [] {"uid":"0086ad5"}
+[2017-10-15 14:53:00] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"a048b18"}
+[2017-10-15 14:53:00] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"a048b18"}
+[2017-10-15 14:53:00] vk-test.INFO: count: 12 [] {"uid":"a048b18"}
+[2017-10-15 14:53:00] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"914c73d"}
+[2017-10-15 14:53:00] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"914c73d"}
+[2017-10-15 14:53:00] vk-test.INFO: count: 12 [] {"uid":"914c73d"}
+[2017-10-15 14:55:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 10 [] {"uid":"84e3c4f"}
+[2017-10-15 14:55:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"84e3c4f"}
+[2017-10-15 14:55:06] vk-test.INFO: count: 12 [] {"uid":"84e3c4f"}
+[2017-10-15 14:55:09] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"a02fdae"}
+[2017-10-15 14:55:09] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"a02fdae"}
+[2017-10-15 14:55:09] vk-test.INFO: count: 12 [] {"uid":"a02fdae"}
+[2017-10-15 14:55:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"98ddd91"}
+[2017-10-15 14:55:24] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"98ddd91"}
+[2017-10-15 14:55:24] vk-test.INFO: count: 12 [] {"uid":"98ddd91"}
+[2017-10-15 14:55:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"9cac896"}
+[2017-10-15 14:55:24] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"9cac896"}
+[2017-10-15 14:55:24] vk-test.INFO: count: 12 [] {"uid":"9cac896"}
+[2017-10-15 14:55:26] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 10 [] {"uid":"0e22b74"}
+[2017-10-15 14:55:26] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0e22b74"}
+[2017-10-15 14:55:26] vk-test.INFO: count: 12 [] {"uid":"0e22b74"}
+[2017-10-15 14:55:26] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 10 [] {"uid":"e16bcd5"}
+[2017-10-15 14:55:26] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e16bcd5"}
+[2017-10-15 14:55:26] vk-test.INFO: count: 12 [] {"uid":"e16bcd5"}
+[2017-10-15 14:55:29] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"9c0cbde"}
+[2017-10-15 14:55:29] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"9c0cbde"}
+[2017-10-15 14:55:29] vk-test.INFO: count: 12 [] {"uid":"9c0cbde"}
+[2017-10-15 14:55:29] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"eeb1908"}
+[2017-10-15 14:55:29] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"eeb1908"}
+[2017-10-15 14:55:29] vk-test.INFO: count: 12 [] {"uid":"eeb1908"}
+[2017-10-15 14:55:33] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"323fdbc"}
+[2017-10-15 14:55:33] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"323fdbc"}
+[2017-10-15 14:55:33] vk-test.INFO: count: 12 [] {"uid":"323fdbc"}
+[2017-10-15 14:55:33] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"e0fcfbb"}
+[2017-10-15 14:55:33] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e0fcfbb"}
+[2017-10-15 14:55:33] vk-test.INFO: count: 12 [] {"uid":"e0fcfbb"}
+[2017-10-15 14:55:36] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"5c7bc6b"}
+[2017-10-15 14:55:36] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"5c7bc6b"}
+[2017-10-15 14:55:36] vk-test.INFO: count: 12 [] {"uid":"5c7bc6b"}
+[2017-10-15 14:55:36] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"f1a8abd"}
+[2017-10-15 14:55:36] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f1a8abd"}
+[2017-10-15 14:55:36] vk-test.INFO: count: 12 [] {"uid":"f1a8abd"}
+[2017-10-15 14:55:38] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"5793d75"}
+[2017-10-15 14:55:38] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"5793d75"}
+[2017-10-15 14:55:38] vk-test.INFO: count: 12 [] {"uid":"5793d75"}
+[2017-10-15 14:55:38] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"7dc9461"}
+[2017-10-15 14:55:38] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"7dc9461"}
+[2017-10-15 14:55:38] vk-test.INFO: count: 12 [] {"uid":"7dc9461"}
+[2017-10-15 14:55:43] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"35beda4"}
+[2017-10-15 14:55:43] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"35beda4"}
+[2017-10-15 14:55:43] vk-test.INFO: count: 12 [] {"uid":"35beda4"}
+[2017-10-15 14:55:44] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 10 [] {"uid":"42dec1a"}
+[2017-10-15 14:55:44] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"42dec1a"}
+[2017-10-15 14:55:44] vk-test.INFO: count: 12 [] {"uid":"42dec1a"}
+[2017-10-15 14:55:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"ca01292"}
+[2017-10-15 14:55:47] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"ca01292"}
+[2017-10-15 14:55:47] vk-test.INFO: count: 12 [] {"uid":"ca01292"}
+[2017-10-15 14:55:49] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"27c52c0"}
+[2017-10-15 14:55:49] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"27c52c0"}
+[2017-10-15 14:55:49] vk-test.INFO: count: 12 [] {"uid":"27c52c0"}
+[2017-10-15 14:57:04] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"c2e551f"}
+[2017-10-15 14:57:04] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c2e551f"}
+[2017-10-15 14:57:04] vk-test.INFO: count: 12 [] {"uid":"c2e551f"}
+[2017-10-15 14:57:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"f2c44f6"}
+[2017-10-15 14:57:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f2c44f6"}
+[2017-10-15 14:57:06] vk-test.INFO: count: 12 [] {"uid":"f2c44f6"}
+[2017-10-15 14:57:10] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"0da8911"}
+[2017-10-15 14:57:10] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0da8911"}
+[2017-10-15 14:57:10] vk-test.INFO: count: 12 [] {"uid":"0da8911"}
+[2017-10-15 14:57:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"65525cc"}
+[2017-10-15 14:57:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"65525cc"}
+[2017-10-15 14:57:12] vk-test.INFO: count: 12 [] {"uid":"65525cc"}
+[2017-10-15 14:57:14] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products  order by id asc limit 10 [] {"uid":"2b5cb50"}
+[2017-10-15 14:57:14] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2b5cb50"}
+[2017-10-15 14:57:14] vk-test.INFO: count: 12 [] {"uid":"2b5cb50"}
+[2017-10-15 14:57:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"e96ab55"}
+[2017-10-15 14:57:18] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e96ab55"}
+[2017-10-15 14:57:18] vk-test.INFO: count: 12 [] {"uid":"e96ab55"}
+[2017-10-15 14:57:21] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"ed252d2"}
+[2017-10-15 14:57:21] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"ed252d2"}
+[2017-10-15 14:57:21] vk-test.INFO: count: 12 [] {"uid":"ed252d2"}
+[2017-10-15 14:59:01] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"2c2d154"}
+[2017-10-15 14:59:01] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2c2d154"}
+[2017-10-15 14:59:01] vk-test.INFO: count: 12 [] {"uid":"2c2d154"}
+[2017-10-15 14:59:54] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"48ced4b"}
+[2017-10-15 14:59:54] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"48ced4b"}
+[2017-10-15 14:59:54] vk-test.INFO: count: 12 [] {"uid":"48ced4b"}
+[2017-10-15 15:00:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"df97c2d"}
+[2017-10-15 15:00:51] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"df97c2d"}
+[2017-10-15 15:00:51] vk-test.INFO: count: 12 [] {"uid":"df97c2d"}
+[2017-10-15 15:00:58] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"ab26273"}
+[2017-10-15 15:00:58] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"ab26273"}
+[2017-10-15 15:00:58] vk-test.INFO: count: 12 [] {"uid":"ab26273"}
+[2017-10-15 15:01:49] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"96e1ffa"}
+[2017-10-15 15:01:49] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"96e1ffa"}
+[2017-10-15 15:01:49] vk-test.INFO: count: 12 [] {"uid":"96e1ffa"}
+[2017-10-15 15:03:35] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"cb9e346"}
+[2017-10-15 15:03:35] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"cb9e346"}
+[2017-10-15 15:03:35] vk-test.INFO: count: 12 [] {"uid":"cb9e346"}
+[2017-10-15 15:04:39] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>0 order by id asc limit 10 [] {"uid":"e5c8a5a"}
+[2017-10-15 15:04:39] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e5c8a5a"}
+[2017-10-15 15:04:39] vk-test.INFO: count: 12 [] {"uid":"e5c8a5a"}
+[2017-10-15 15:05:03] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>10 order by id asc limit 10 [] {"uid":"36889c9"}
+[2017-10-15 15:05:03] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"36889c9"}
+[2017-10-15 15:05:03] vk-test.INFO: count: 12 [] {"uid":"36889c9"}
+[2017-10-15 15:05:10] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products where id>12 order by id asc limit 10 [] {"uid":"9d249d7"}
+[2017-10-15 15:05:10] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"9d249d7"}
+[2017-10-15 15:05:10] vk-test.INFO: count: 12 [] {"uid":"9d249d7"}
+[2017-10-15 15:16:30] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 10 offset 0 [] {"uid":"614c9a7"}
+[2017-10-15 15:16:30] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"614c9a7"}
+[2017-10-15 15:16:30] vk-test.INFO: count: 12 [] {"uid":"614c9a7"}
+[2017-10-15 15:16:33] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 10 offset 10 [] {"uid":"c2ae51b"}
+[2017-10-15 15:16:33] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c2ae51b"}
+[2017-10-15 15:16:33] vk-test.INFO: count: 12 [] {"uid":"c2ae51b"}
+[2017-10-15 15:16:36] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 10 offset 0 [] {"uid":"e06834d"}
+[2017-10-15 15:16:36] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e06834d"}
+[2017-10-15 15:16:36] vk-test.INFO: count: 12 [] {"uid":"e06834d"}
+[2017-10-15 15:17:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"6f215c7"}
+[2017-10-15 15:17:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"6f215c7"}
+[2017-10-15 15:17:06] vk-test.INFO: count: 12 [] {"uid":"6f215c7"}
+[2017-10-15 15:17:09] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"1093706"}
+[2017-10-15 15:17:09] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1093706"}
+[2017-10-15 15:17:09] vk-test.INFO: count: 12 [] {"uid":"1093706"}
+[2017-10-15 15:17:11] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"a017705"}
+[2017-10-15 15:17:11] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"a017705"}
+[2017-10-15 15:17:11] vk-test.INFO: count: 12 [] {"uid":"a017705"}
+[2017-10-15 15:17:13] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"c3263e8"}
+[2017-10-15 15:17:13] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c3263e8"}
+[2017-10-15 15:17:13] vk-test.INFO: count: 12 [] {"uid":"c3263e8"}
+[2017-10-15 15:17:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"e01a700"}
+[2017-10-15 15:17:18] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e01a700"}
+[2017-10-15 15:17:18] vk-test.INFO: count: 12 [] {"uid":"e01a700"}
+[2017-10-15 15:17:19] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"9a16f2f"}
+[2017-10-15 15:17:19] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"9a16f2f"}
+[2017-10-15 15:17:19] vk-test.INFO: count: 12 [] {"uid":"9a16f2f"}
+[2017-10-15 15:17:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"d012935"}
+[2017-10-15 15:17:20] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d012935"}
+[2017-10-15 15:17:20] vk-test.INFO: count: 12 [] {"uid":"d012935"}
+[2017-10-15 15:19:03] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"a070ea6"}
+[2017-10-15 15:19:03] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"a070ea6"}
+[2017-10-15 15:19:03] vk-test.INFO: count: 12 [] {"uid":"a070ea6"}
+[2017-10-15 15:19:05] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"c71c1e2"}
+[2017-10-15 15:19:05] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c71c1e2"}
+[2017-10-15 15:19:05] vk-test.INFO: count: 12 [] {"uid":"c71c1e2"}
+[2017-10-15 15:28:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"05f4cec"}
+[2017-10-15 15:28:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"05f4cec"}
+[2017-10-15 15:28:06] vk-test.INFO: count: 12 [] {"uid":"05f4cec"}
+[2017-10-15 15:29:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"e1aea45"}
+[2017-10-15 15:29:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e1aea45"}
+[2017-10-15 15:29:06] vk-test.INFO: count: 12 [] {"uid":"e1aea45"}
+[2017-10-15 15:29:11] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"73e7980"}
+[2017-10-15 15:29:11] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"73e7980"}
+[2017-10-15 15:29:11] vk-test.INFO: count: 12 [] {"uid":"73e7980"}
+[2017-10-15 15:31:15] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"3b632e6"}
+[2017-10-15 15:31:15] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"3b632e6"}
+[2017-10-15 15:31:15] vk-test.INFO: count: 12 [] {"uid":"3b632e6"}
+[2017-10-15 15:38:35] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"f3ede4c"}
+[2017-10-15 15:38:35] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f3ede4c"}
+[2017-10-15 15:38:35] vk-test.INFO: count: 12 [] {"uid":"f3ede4c"}
+[2017-10-15 15:39:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"54aa95d"}
+[2017-10-15 15:39:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"54aa95d"}
+[2017-10-15 15:39:12] vk-test.INFO: count: 12 [] {"uid":"54aa95d"}
+[2017-10-15 15:40:07] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"c5fe973"}
+[2017-10-15 15:40:07] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c5fe973"}
+[2017-10-15 15:40:07] vk-test.INFO: count: 12 [] {"uid":"c5fe973"}
+[2017-10-15 15:40:48] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"718792e"}
+[2017-10-15 15:40:48] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"718792e"}
+[2017-10-15 15:40:48] vk-test.INFO: count: 12 [] {"uid":"718792e"}
+[2017-10-15 15:43:02] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"44a6e1b"}
+[2017-10-15 15:43:02] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"44a6e1b"}
+[2017-10-15 15:43:02] vk-test.INFO: count: 12 [] {"uid":"44a6e1b"}
+[2017-10-15 15:43:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"c4f76e2"}
+[2017-10-15 15:43:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c4f76e2"}
+[2017-10-15 15:43:12] vk-test.INFO: count: 12 [] {"uid":"c4f76e2"}
+[2017-10-15 15:43:13] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"8d45c45"}
+[2017-10-15 15:43:13] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"8d45c45"}
+[2017-10-15 15:43:13] vk-test.INFO: count: 12 [] {"uid":"8d45c45"}
+[2017-10-15 15:43:14] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"ab9562a"}
+[2017-10-15 15:43:14] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"ab9562a"}
+[2017-10-15 15:43:14] vk-test.INFO: count: 12 [] {"uid":"ab9562a"}
+[2017-10-15 15:53:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"0d70b24"}
+[2017-10-15 15:53:20] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0d70b24"}
+[2017-10-15 15:53:20] vk-test.INFO: count: 12 [] {"uid":"0d70b24"}
+[2017-10-15 15:54:19] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"48225cd"}
+[2017-10-15 15:54:19] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"48225cd"}
+[2017-10-15 15:54:19] vk-test.INFO: count: 12 [] {"uid":"48225cd"}
+[2017-10-15 15:58:11] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"b11027c"}
+[2017-10-15 15:58:11] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"b11027c"}
+[2017-10-15 15:58:11] vk-test.INFO: count: 12 [] {"uid":"b11027c"}
+[2017-10-15 15:58:13] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"1e642cc"}
+[2017-10-15 15:58:13] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1e642cc"}
+[2017-10-15 15:58:13] vk-test.INFO: count: 12 [] {"uid":"1e642cc"}
+[2017-10-15 16:00:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"5da3863"}
+[2017-10-15 16:00:18] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"5da3863"}
+[2017-10-15 16:00:18] vk-test.INFO: count: 12 [] {"uid":"5da3863"}
+[2017-10-15 16:01:02] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"6783386"}
+[2017-10-15 16:01:02] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"6783386"}
+[2017-10-15 16:01:02] vk-test.INFO: count: 12 [] {"uid":"6783386"}
+[2017-10-15 16:02:28] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"89ab176"}
+[2017-10-15 16:02:28] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"89ab176"}
+[2017-10-15 16:02:28] vk-test.INFO: count: 12 [] {"uid":"89ab176"}
+[2017-10-15 16:02:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"47164d1"}
+[2017-10-15 16:02:51] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"47164d1"}
+[2017-10-15 16:02:51] vk-test.INFO: count: 12 [] {"uid":"47164d1"}
+[2017-10-15 16:03:01] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"8cf14c3"}
+[2017-10-15 16:03:01] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"8cf14c3"}
+[2017-10-15 16:03:01] vk-test.INFO: count: 12 [] {"uid":"8cf14c3"}
+[2017-10-15 16:03:36] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"4068c2c"}
+[2017-10-15 16:03:36] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"4068c2c"}
+[2017-10-15 16:03:36] vk-test.INFO: count: 12 [] {"uid":"4068c2c"}
+[2017-10-15 16:06:05] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"1da606f"}
+[2017-10-15 16:06:05] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1da606f"}
+[2017-10-15 16:06:05] vk-test.INFO: count: 12 [] {"uid":"1da606f"}
+[2017-10-15 16:06:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"4085dfe"}
+[2017-10-15 16:06:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"4085dfe"}
+[2017-10-15 16:06:06] vk-test.INFO: count: 12 [] {"uid":"4085dfe"}
+[2017-10-15 16:06:08] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"c8b067d"}
+[2017-10-15 16:06:08] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c8b067d"}
+[2017-10-15 16:06:08] vk-test.INFO: count: 12 [] {"uid":"c8b067d"}
+[2017-10-15 16:06:10] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"7fa51c9"}
+[2017-10-15 16:06:10] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"7fa51c9"}
+[2017-10-15 16:06:10] vk-test.INFO: count: 12 [] {"uid":"7fa51c9"}
+[2017-10-15 16:06:11] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"0c5450a"}
+[2017-10-15 16:06:11] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0c5450a"}
+[2017-10-15 16:06:11] vk-test.INFO: count: 12 [] {"uid":"0c5450a"}
+[2017-10-15 16:06:17] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"3e45c23"}
+[2017-10-15 16:06:17] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"3e45c23"}
+[2017-10-15 16:06:17] vk-test.INFO: count: 12 [] {"uid":"3e45c23"}
+[2017-10-15 16:06:19] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"43c2997"}
+[2017-10-15 16:06:19] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"43c2997"}
+[2017-10-15 16:06:19] vk-test.INFO: count: 12 [] {"uid":"43c2997"}
+[2017-10-15 16:09:27] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"767acbe"}
+[2017-10-15 16:09:27] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"767acbe"}
+[2017-10-15 16:09:27] vk-test.INFO: count: 12 [] {"uid":"767acbe"}
+[2017-10-15 16:09:37] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"c98e98f"}
+[2017-10-15 16:09:37] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c98e98f"}
+[2017-10-15 16:09:37] vk-test.INFO: count: 12 [] {"uid":"c98e98f"}
+[2017-10-15 16:09:39] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"94470a5"}
+[2017-10-15 16:09:39] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"94470a5"}
+[2017-10-15 16:09:39] vk-test.INFO: count: 12 [] {"uid":"94470a5"}
+[2017-10-15 16:11:23] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"de073c4"}
+[2017-10-15 16:11:23] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"de073c4"}
+[2017-10-15 16:11:23] vk-test.INFO: count: 12 [] {"uid":"de073c4"}
+[2017-10-15 16:13:26] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"2a7953c"}
+[2017-10-15 16:13:26] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2a7953c"}
+[2017-10-15 16:13:26] vk-test.INFO: count: 12 [] {"uid":"2a7953c"}
+[2017-10-15 16:15:27] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"86c0684"}
+[2017-10-15 16:15:27] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"86c0684"}
+[2017-10-15 16:15:27] vk-test.INFO: count: 12 [] {"uid":"86c0684"}
+[2017-10-15 16:16:35] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"8a6e126"}
+[2017-10-15 16:16:35] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"8a6e126"}
+[2017-10-15 16:16:35] vk-test.INFO: count: 12 [] {"uid":"8a6e126"}
+[2017-10-15 16:17:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"02c6c59"}
+[2017-10-15 16:17:24] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"02c6c59"}
+[2017-10-15 16:17:24] vk-test.INFO: count: 12 [] {"uid":"02c6c59"}
+[2017-10-15 16:17:35] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"e2e8309"}
+[2017-10-15 16:17:35] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e2e8309"}
+[2017-10-15 16:17:35] vk-test.INFO: count: 12 [] {"uid":"e2e8309"}
+[2017-10-15 16:17:36] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"37c1d12"}
+[2017-10-15 16:17:36] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"37c1d12"}
+[2017-10-15 16:17:36] vk-test.INFO: count: 12 [] {"uid":"37c1d12"}
+[2017-10-15 16:17:38] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"bfb2b3c"}
+[2017-10-15 16:17:38] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"bfb2b3c"}
+[2017-10-15 16:17:38] vk-test.INFO: count: 12 [] {"uid":"bfb2b3c"}
+[2017-10-15 16:17:39] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"0131a9f"}
+[2017-10-15 16:17:39] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0131a9f"}
+[2017-10-15 16:17:39] vk-test.INFO: count: 12 [] {"uid":"0131a9f"}
+[2017-10-15 16:25:26] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"31afc97"}
+[2017-10-15 16:25:26] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"31afc97"}
+[2017-10-15 16:25:26] vk-test.INFO: count: 12 [] {"uid":"31afc97"}
+[2017-10-15 16:26:17] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"5a965b2"}
+[2017-10-15 16:26:17] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"5a965b2"}
+[2017-10-15 16:26:17] vk-test.INFO: count: 12 [] {"uid":"5a965b2"}
+[2017-10-15 16:32:46] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"2da5846"}
+[2017-10-15 16:32:46] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2da5846"}
+[2017-10-15 16:32:46] vk-test.INFO: count: 12 [] {"uid":"2da5846"}
+[2017-10-15 16:33:11] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"96e7ad8"}
+[2017-10-15 16:33:11] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"96e7ad8"}
+[2017-10-15 16:33:11] vk-test.INFO: count: 12 [] {"uid":"96e7ad8"}
+[2017-10-15 16:33:29] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"fd08b09"}
+[2017-10-15 16:33:29] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"fd08b09"}
+[2017-10-15 16:33:29] vk-test.INFO: count: 12 [] {"uid":"fd08b09"}
+[2017-10-15 16:33:32] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"eef4444"}
+[2017-10-15 16:33:32] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"eef4444"}
+[2017-10-15 16:33:32] vk-test.INFO: count: 12 [] {"uid":"eef4444"}
+[2017-10-15 16:33:33] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"d8e5b93"}
+[2017-10-15 16:33:33] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d8e5b93"}
+[2017-10-15 16:33:33] vk-test.INFO: count: 12 [] {"uid":"d8e5b93"}
+[2017-10-15 16:35:09] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"7775c08"}
+[2017-10-15 16:35:09] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"7775c08"}
+[2017-10-15 16:35:09] vk-test.INFO: count: 12 [] {"uid":"7775c08"}
+[2017-10-15 16:36:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"6013bfb"}
+[2017-10-15 16:36:20] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"6013bfb"}
+[2017-10-15 16:36:20] vk-test.INFO: count: 12 [] {"uid":"6013bfb"}
+[2017-10-15 16:36:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"5e28058"}
+[2017-10-15 16:36:47] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"5e28058"}
+[2017-10-15 16:36:47] vk-test.INFO: count: 12 [] {"uid":"5e28058"}
+[2017-10-15 16:43:03] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"4c7eb91"}
+[2017-10-15 16:43:03] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"4c7eb91"}
+[2017-10-15 16:43:03] vk-test.INFO: count: 12 [] {"uid":"4c7eb91"}
+[2017-10-15 16:45:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"46fa6fd"}
+[2017-10-15 16:45:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"46fa6fd"}
+[2017-10-15 16:45:12] vk-test.INFO: count: 12 [] {"uid":"46fa6fd"}
+[2017-10-15 16:46:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"34f0ad2"}
+[2017-10-15 16:46:24] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"34f0ad2"}
+[2017-10-15 16:46:24] vk-test.INFO: count: 12 [] {"uid":"34f0ad2"}
+[2017-10-15 16:47:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"36492ee"}
+[2017-10-15 16:47:18] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"36492ee"}
+[2017-10-15 16:47:18] vk-test.INFO: count: 12 [] {"uid":"36492ee"}
+[2017-10-15 16:47:27] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"7ac5abb"}
+[2017-10-15 16:47:27] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"7ac5abb"}
+[2017-10-15 16:47:27] vk-test.INFO: count: 12 [] {"uid":"7ac5abb"}
+[2017-10-15 16:47:44] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"2c90ba6"}
+[2017-10-15 16:47:44] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2c90ba6"}
+[2017-10-15 16:47:44] vk-test.INFO: count: 12 [] {"uid":"2c90ba6"}
+[2017-10-15 16:48:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"84d11c5"}
+[2017-10-15 16:48:20] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"84d11c5"}
+[2017-10-15 16:48:20] vk-test.INFO: count: 12 [] {"uid":"84d11c5"}
+[2017-10-15 16:48:41] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"6defe56"}
+[2017-10-15 16:48:41] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"6defe56"}
+[2017-10-15 16:48:41] vk-test.INFO: count: 12 [] {"uid":"6defe56"}
+[2017-10-15 16:50:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"d89be9b"}
+[2017-10-15 16:50:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d89be9b"}
+[2017-10-15 16:50:22] vk-test.INFO: count: 12 [] {"uid":"d89be9b"}
+[2017-10-15 16:50:32] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"3a55337"}
+[2017-10-15 16:50:32] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"3a55337"}
+[2017-10-15 16:50:32] vk-test.INFO: count: 12 [] {"uid":"3a55337"}
+[2017-10-15 16:50:35] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"30e276d"}
+[2017-10-15 16:50:35] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"30e276d"}
+[2017-10-15 16:50:35] vk-test.INFO: count: 12 [] {"uid":"30e276d"}
+[2017-10-15 16:50:38] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"006ce36"}
+[2017-10-15 16:50:38] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"006ce36"}
+[2017-10-15 16:50:38] vk-test.INFO: count: 12 [] {"uid":"006ce36"}
+[2017-10-15 16:50:39] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"448e6e1"}
+[2017-10-15 16:50:39] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"448e6e1"}
+[2017-10-15 16:50:39] vk-test.INFO: count: 12 [] {"uid":"448e6e1"}
+[2017-10-15 16:52:04] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"906ff5a"}
+[2017-10-15 16:52:04] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"906ff5a"}
+[2017-10-15 16:52:04] vk-test.INFO: count: 12 [] {"uid":"906ff5a"}
+[2017-10-15 16:52:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"caf2117"}
+[2017-10-15 16:52:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"caf2117"}
+[2017-10-15 16:52:06] vk-test.INFO: count: 12 [] {"uid":"caf2117"}
+[2017-10-15 16:52:44] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"e4354d5"}
+[2017-10-15 16:52:44] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e4354d5"}
+[2017-10-15 16:52:44] vk-test.INFO: count: 12 [] {"uid":"e4354d5"}
+[2017-10-15 16:52:56] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"c7ce29b"}
+[2017-10-15 16:52:56] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c7ce29b"}
+[2017-10-15 16:52:56] vk-test.INFO: count: 12 [] {"uid":"c7ce29b"}
+[2017-10-15 16:56:14] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"f806a06"}
+[2017-10-15 16:56:14] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f806a06"}
+[2017-10-15 16:56:14] vk-test.INFO: count: 12 [] {"uid":"f806a06"}
+[2017-10-15 16:57:15] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"36b69f6"}
+[2017-10-15 16:57:15] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"36b69f6"}
+[2017-10-15 16:57:15] vk-test.INFO: count: 12 [] {"uid":"36b69f6"}
+[2017-10-15 16:58:21] vk-test.INFO:  [] {"uid":"2b1902c"}
+[2017-10-15 16:58:21] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"2b1902c"}
+[2017-10-15 16:58:21] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2b1902c"}
+[2017-10-15 16:58:21] vk-test.INFO: count: 12 [] {"uid":"2b1902c"}
+[2017-10-15 16:58:32] vk-test.INFO:  [] {"uid":"e44816e"}
+[2017-10-15 16:58:32] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"e44816e"}
+[2017-10-15 16:58:32] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"e44816e"}
+[2017-10-15 16:58:32] vk-test.INFO: count: 12 [] {"uid":"e44816e"}
+[2017-10-15 16:58:51] vk-test.INFO:  [] {"uid":"1e5c4ea"}
+[2017-10-15 16:58:51] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"1e5c4ea"}
+[2017-10-15 16:58:51] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1e5c4ea"}
+[2017-10-15 16:58:51] vk-test.INFO: count: 12 [] {"uid":"1e5c4ea"}
+[2017-10-15 17:01:56] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"f481321"}
+[2017-10-15 17:01:56] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f481321"}
+[2017-10-15 17:01:56] vk-test.INFO: count: 12 [] {"uid":"f481321"}
+[2017-10-15 17:01:59] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id desc limit 4 offset 0 [] {"uid":"867f653"}
+[2017-10-15 17:01:59] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"867f653"}
+[2017-10-15 17:01:59] vk-test.INFO: count: 12 [] {"uid":"867f653"}
+[2017-10-15 17:02:01] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"6aa9d31"}
+[2017-10-15 17:02:01] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"6aa9d31"}
+[2017-10-15 17:02:01] vk-test.INFO: count: 12 [] {"uid":"6aa9d31"}
+[2017-10-15 17:02:02] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id desc limit 4 offset 0 [] {"uid":"718b73b"}
+[2017-10-15 17:02:02] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"718b73b"}
+[2017-10-15 17:02:02] vk-test.INFO: count: 12 [] {"uid":"718b73b"}
+[2017-10-15 17:02:04] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"72cb439"}
+[2017-10-15 17:02:04] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"72cb439"}
+[2017-10-15 17:02:04] vk-test.INFO: count: 12 [] {"uid":"72cb439"}
+[2017-10-15 17:02:06] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 0 [] {"uid":"94c6e9f"}
+[2017-10-15 17:02:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"94c6e9f"}
+[2017-10-15 17:02:06] vk-test.INFO: count: 12 [] {"uid":"94c6e9f"}
+[2017-10-15 17:02:10] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 4 [] {"uid":"41f7caf"}
+[2017-10-15 17:02:10] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"41f7caf"}
+[2017-10-15 17:02:10] vk-test.INFO: count: 12 [] {"uid":"41f7caf"}
+[2017-10-15 17:02:12] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 8 [] {"uid":"49fd23c"}
+[2017-10-15 17:02:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"49fd23c"}
+[2017-10-15 17:02:12] vk-test.INFO: count: 12 [] {"uid":"49fd23c"}
+[2017-10-15 17:02:14] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"1fc7dd7"}
+[2017-10-15 17:02:14] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1fc7dd7"}
+[2017-10-15 17:02:14] vk-test.INFO: count: 12 [] {"uid":"1fc7dd7"}

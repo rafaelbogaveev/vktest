@@ -16,17 +16,14 @@
  * @param $orderType
  * @return array of db rows
  */
-function getProductsSortedById($lastId, $limit, $orderType){
+function getProductsSortedById($limit, $offset, $order){
     require (__DIR__.'/../data/db.php');
     global $app;
 
     // resolving logger
     $logger = $app->getContainer()->get('logger');
 
-    $order = $orderType=='desc' ? $orderType: 'asc';
-    $whereClause = null==$lastId ? '' : 'where id>'.$lastId;
-
-    $query = 'Select * From products '.$whereClause.' order by id '.$order.' limit '.$limit;
+    $query = 'Select * From products order by id '.$order.' limit '.$limit.' offset '.$offset;
     $result = $mysqli->query($query);
 
     $logger->info("Fetching list of products sorted by id from database. SQL: ".$query);
@@ -171,12 +168,13 @@ function getProductsCount(){
     require (__DIR__.'/../data/db.php');
     global $app;
 
-    $query = 'Select count(id) From products';
+    $query = 'Select count(id) as productCount From products';
     $logger = $app->getContainer()->get('logger');
     $logger->info("Get products count. SQL: " . $query);
 
     $result = $mysqli->query($query);
     $row = $result->fetch_assoc();
+    $logger->info("count: " . $row['productCount']);
 
-    $row[0];
+    return $row['productCount'];
 }
