@@ -42,10 +42,6 @@ $app->get('/api/list', function (Request $request, Response $response) {
     return json_encode($data);
 });
 
-$app->get('/api/product/{id}', function (Request $request, Response $response) {
-
-});
-
 
 $app->post('/api/add', function (Request $request, Response $response){
     $name=$request->getParam('name');
@@ -53,7 +49,12 @@ $app->post('/api/add', function (Request $request, Response $response){
     $price=$request->getParam('price');
     $url=$request->getParam('url');
 
-    save(null, $name, $description, $price, $url);
+    $limit=$request->getParam('limit');
+    $offset=$request->getParam('offset');
+    $orderField=$request->getParam('orderField');
+    $orderType=$request->getParam('orderType');
+
+    save(null, $name, $description, $price, $url, $limit, $offset, $orderField, $orderType);
 
     return json_encode(array("status" => "200", "code" => 1));
 });
@@ -66,14 +67,25 @@ $app->put('/api/edit/{id}', function (Request $request, Response $response) {
     $price=$request->getParam('price');
     $url=$request->getParam('url');
 
-    save($id, $name, $description, $price, $url);
+    $limit=$request->getParam('limit');
+    $offset=$request->getParam('offset');
+    $orderField=$request->getParam('orderField');
+    $orderType=$request->getParam('orderType');
+
+    save($id, $name, $description, $price, $url, $limit, $offset, $orderField, $orderType);
 
     return json_encode(array("status" => "200", "code" => 1));
 });
 
 $app->delete('/api/delete/{id}', function (Request $request, Response $response){
     $id = $request->getAttribute('id');
-    delete($id);
+
+    $limit=$request->getParam('limit');
+    $offset=$request->getParam('offset');
+    $orderField=$request->getParam('orderField');
+    $orderType=$request->getParam('orderType');
+
+    delete($id,$limit, $offset, $orderField, $orderType);
 
     return json_encode(array("status" => "200", "code" => 1));
 });

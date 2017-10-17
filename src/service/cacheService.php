@@ -8,25 +8,121 @@
 
 require_once (__DIR__ . '/../data/memcached.php');
 
+//key for storing prefix for sorted by price pages
+define('price_prefix_key', 'price_prefix');
+
+//key for storing prefix for sorted by id pages
+define('id_prefix_desc_key', 'id_desc_prefix');
 
 
 /**
+ * Returns data stored by key formed by parameters
+ *
+ * @param $key
+ * @return mixed
+ */
+function getValueByKey($key){
+   require (__DIR__.'/../data/memcached.php');
+   global $app;
+   $logger = $app->getContainer()->get('logger');
+
+   $logger->info("Get data from cache by key=".$key);
+
+   return $memcached->get($key);
+}
+
+/**
+ * @param $key
+ * @param $data
+ */
+function saveValueByKey($key, $data){
+    require (__DIR__.'/../data/memcached.php');
+    global $app;
+    $logger = $app->getContainer()->get('logger');
+
+    $logger->info("Save data into cache for key=".$key);
+
+    $memcached->set($key, $data);
+}
+
+/**
+ * @param $key
+ */
+function deleteByKey($key){
+    require (__DIR__.'/../data/memcached.php');
+    global $app;
+    $logger = $app->getContainer()->get('logger');
+
+    $logger->info("Delete data from cache by key=".$key);
+
+    $memcached->delete($key);
+}
+
+
+/**
+ *
+ * @param $orderField
  * @param $limit
  * @param $offset
+ * @param $orderType
+ * @return string
+ */
+function getKeyForPage($orderField, $limit, $offset, $orderType){
+    $prefix = getKeyPrefix($orderField, $orderType);
+    $key = $prefix.'_'.$limit.'_'.$offset.'_'.$orderType;
+
+    return $key;
+}
+
+
+/**
+ * @param $orderField
+ * @param $orderType
+ */
+function getKeyPrefix($orderField, $orderType){
+    require (__DIR__.'/../data/memcached.php');
+
+    if ('price' == $orderField){
+        $lastId = $memcached->get(price_prefix_key);
+        if (null == $lastId){
+            $lastId =1;
+            saveValueByKey(price_prefix_key, $lastId);
+        }
+
+        return $orderField.$lastId;
+    }
+
+    if ('id' == $orderField && 'desc'==$orderType){
+        $lastId = $memcached->get(id_prefix_desc_key);
+        if (null == $lastId){
+            $lastId =1;
+            saveValueByKey(id_prefix_desc_key, $lastId);
+        }
+
+        return $orderField.$lastId;
+    }
+
+    return $orderField;
+}
+
+/**
  * @param $orderField
  */
-function getBlockSize($offset, $orderField)
+function changeKeyPrefix($orderField)
 {
-    global $config;
-    // maximum amount of items in block of products
-    $block_size = $config['settings']['block_size'];
+    require(__DIR__ . '/../data/memcached.php');
 
-    // if sorting is not by descening or we are not fetching the last block
-    //we need this part to avoid intersection of two blocks
-    if ($orderField != 'desc' || $offset>$block_size) return $block_size;
+    if ('price' == $orderField) {
+        $lastId = $memcached->get(price_prefix_key);
 
-    // for the last block  we need to get tail
-    $count = getProductsCount();
+        $lastId = null == $lastId ? 1 : $lastId + 1;
+        saveValueByKey(price_prefix_key, $lastId);
+    }
 
-    return $count % $block_size == 0 ? $block_size : $count % $block_size;
+    if ('id' == $orderField) {
+        $lastId = $memcached->get(id_prefix_desc_key);
+
+        $lastId = null == $lastId ? 1 : $lastId + 1;
+        saveValueByKey(id_prefix_desc_key, $lastId);
+    }
 }

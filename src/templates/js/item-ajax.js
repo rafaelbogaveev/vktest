@@ -108,7 +108,11 @@ $( document ).ready(function() {
                       name: name,
                       description: description,
                       price: price,
-                      url: imageUrl
+                      url: imageUrl,
+                      limit:limit,
+                      offset: offset,
+                      orderField: sortField,
+                      orderType: sortType
                 }
             }).done(function(data){
                 //clear all text in create form
@@ -135,7 +139,12 @@ $( document ).ready(function() {
             dataType: 'json',
             type:'DELETE',
             url: url + 'api/delete/' + id,
-            //data:{id:id}
+            data:{
+                limit:limit,
+                offset: offset,
+                orderField: sortField,
+                orderType: sortType
+            }
         }).done(function(data){
             //c_obj.remove();
             toastr.success('Item Deleted Successfully.', 'Success Alert', {timeOut: 5000});
@@ -177,7 +186,16 @@ $( document ).ready(function() {
                 dataType: 'json',
                 type:'PUT',
                 url: url + form_action+'/'+id,
-                data:{name:name, description:description, price:price, url: imgUrl}
+                data:{
+                    name:name,
+                    description:description,
+                    price:price,
+                    url: imgUrl,
+                    limit:limit,
+                    offset: offset,
+                    orderField: sortField,
+                    orderType: sortType
+                }
             }).done(function(data){
                 getPageData();
                 $(".modal").modal('hide');

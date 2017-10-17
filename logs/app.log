@@ -614,3 +614,166 @@
 [2017-10-15 17:02:14] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"1fc7dd7"}
 [2017-10-15 17:02:14] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1fc7dd7"}
 [2017-10-15 17:02:14] vk-test.INFO: count: 12 [] {"uid":"1fc7dd7"}
+[2017-10-15 17:03:32] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"246f761"}
+[2017-10-15 17:03:32] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"246f761"}
+[2017-10-15 17:03:32] vk-test.INFO: count: 12 [] {"uid":"246f761"}
+[2017-10-15 17:03:51] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=1, url='null' WHERE id=10 [] {"uid":"e0c8538"}
+[2017-10-15 17:03:51] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"7f3b2ef"}
+[2017-10-15 17:03:51] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"7f3b2ef"}
+[2017-10-15 17:03:51] vk-test.INFO: count: 12 [] {"uid":"7f3b2ef"}
+[2017-10-15 17:03:57] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"996f1c8"}
+[2017-10-15 17:03:57] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"996f1c8"}
+[2017-10-15 17:03:57] vk-test.INFO: count: 12 [] {"uid":"996f1c8"}
+[2017-10-15 17:04:00] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"3dff559"}
+[2017-10-15 17:04:00] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"3dff559"}
+[2017-10-15 17:04:00] vk-test.INFO: count: 12 [] {"uid":"3dff559"}
+[2017-10-16 12:26:23] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"f8950c7"}
+[2017-10-16 12:26:23] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f8950c7"}
+[2017-10-16 12:26:23] vk-test.INFO: count: 12 [] {"uid":"f8950c7"}
+[2017-10-16 12:27:23] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"2134809"}
+[2017-10-16 12:27:23] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"2134809"}
+[2017-10-16 12:27:23] vk-test.INFO: count: 12 [] {"uid":"2134809"}
+[2017-10-16 12:27:24] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"d000b4d"}
+[2017-10-16 12:27:24] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d000b4d"}
+[2017-10-16 12:27:24] vk-test.INFO: count: 12 [] {"uid":"d000b4d"}
+[2017-10-16 14:22:22] vk-test.INFO: Get data from cache by key=id_4_0_asc [] {"uid":"f6fc883"}
+[2017-10-16 14:22:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"f6fc883"}
+[2017-10-16 14:22:22] vk-test.INFO: Save data into cache for key=id_4_0_asc [] {"uid":"f6fc883"}
+[2017-10-16 14:22:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f6fc883"}
+[2017-10-16 14:22:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f6fc883"}
+[2017-10-16 14:22:22] vk-test.INFO: count: 12 [] {"uid":"f6fc883"}
+[2017-10-16 14:23:06] vk-test.INFO: Get data from cache by key=id_4_4_asc [] {"uid":"f0dfb7b"}
+[2017-10-16 14:23:06] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"f0dfb7b"}
+[2017-10-16 14:23:06] vk-test.INFO: Save data into cache for key=id_4_4_asc [] {"uid":"f0dfb7b"}
+[2017-10-16 14:23:06] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f0dfb7b"}
+[2017-10-16 14:23:06] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f0dfb7b"}
+[2017-10-16 14:23:06] vk-test.INFO: count: 12 [] {"uid":"f0dfb7b"}
+[2017-10-16 14:23:07] vk-test.INFO: Get data from cache by key=id_4_8_asc [] {"uid":"c1ff298"}
+[2017-10-16 14:23:07] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"c1ff298"}
+[2017-10-16 14:23:07] vk-test.INFO: Save data into cache for key=id_4_8_asc [] {"uid":"c1ff298"}
+[2017-10-16 14:23:07] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"c1ff298"}
+[2017-10-16 14:23:07] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c1ff298"}
+[2017-10-16 14:23:07] vk-test.INFO: count: 12 [] {"uid":"c1ff298"}
+[2017-10-16 14:23:10] vk-test.INFO: Get data from cache by key=id_4_0_asc [] {"uid":"af6bd28"}
+[2017-10-16 14:23:10] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"af6bd28"}
+[2017-10-16 14:23:10] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"af6bd28"}
+[2017-10-16 14:23:10] vk-test.INFO: count: 12 [] {"uid":"af6bd28"}
+[2017-10-16 14:23:12] vk-test.INFO: Get data from cache by key=id_4_8_asc [] {"uid":"53fd73f"}
+[2017-10-16 14:23:12] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"53fd73f"}
+[2017-10-16 14:23:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"53fd73f"}
+[2017-10-16 14:23:12] vk-test.INFO: count: 12 [] {"uid":"53fd73f"}
+[2017-10-16 14:23:14] vk-test.INFO: Get data from cache by key=price_4_8_asc [] {"uid":"ef0c799"}
+[2017-10-16 14:23:14] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 8 [] {"uid":"ef0c799"}
+[2017-10-16 14:23:14] vk-test.INFO: Save data into cache for key=price_4_8_asc [] {"uid":"ef0c799"}
+[2017-10-16 14:23:14] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"ef0c799"}
+[2017-10-16 14:23:14] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"ef0c799"}
+[2017-10-16 14:23:14] vk-test.INFO: count: 12 [] {"uid":"ef0c799"}
+[2017-10-16 14:23:19] vk-test.INFO: Get data from cache by key=price_4_8_desc [] {"uid":"19c13ca"}
+[2017-10-16 14:23:19] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"19c13ca"}
+[2017-10-16 14:23:19] vk-test.INFO: Save data into cache for key=price_4_8_desc [] {"uid":"19c13ca"}
+[2017-10-16 14:23:19] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"19c13ca"}
+[2017-10-16 14:23:19] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"19c13ca"}
+[2017-10-16 14:23:19] vk-test.INFO: count: 12 [] {"uid":"19c13ca"}
+[2017-10-16 14:23:22] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"a9cb5df"}
+[2017-10-16 14:23:22] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"a9cb5df"}
+[2017-10-16 14:23:22] vk-test.INFO: Save data into cache for key=price_4_0_desc [] {"uid":"a9cb5df"}
+[2017-10-16 14:23:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"a9cb5df"}
+[2017-10-16 14:23:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"a9cb5df"}
+[2017-10-16 14:23:22] vk-test.INFO: count: 12 [] {"uid":"a9cb5df"}
+[2017-10-16 14:26:49] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=7.2, url='test' WHERE id=11 [] {"uid":"435c247"}
+[2017-10-16 14:26:49] vk-test.INFO: Delete data from cache by key=price_4_0_desc [] {"uid":"435c247"}
+[2017-10-16 14:26:49] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"75ce419"}
+[2017-10-16 14:26:49] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"75ce419"}
+[2017-10-16 14:26:49] vk-test.INFO: Save data into cache for key=price_4_0_desc [] {"uid":"75ce419"}
+[2017-10-16 14:26:49] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"75ce419"}
+[2017-10-16 14:26:49] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"75ce419"}
+[2017-10-16 14:26:49] vk-test.INFO: count: 12 [] {"uid":"75ce419"}
+[2017-10-16 14:27:03] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=0.2, url='test' WHERE id=11 [] {"uid":"431a044"}
+[2017-10-16 14:27:03] vk-test.INFO: Delete data from cache by key=price_4_0_desc [] {"uid":"431a044"}
+[2017-10-16 14:27:03] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"d9115b5"}
+[2017-10-16 14:27:03] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"d9115b5"}
+[2017-10-16 14:27:03] vk-test.INFO: Save data into cache for key=price_4_0_desc [] {"uid":"d9115b5"}
+[2017-10-16 14:27:03] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"d9115b5"}
+[2017-10-16 14:27:03] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d9115b5"}
+[2017-10-16 14:27:03] vk-test.INFO: count: 12 [] {"uid":"d9115b5"}
+[2017-10-16 14:27:12] vk-test.INFO: Get data from cache by key=price_4_8_desc [] {"uid":"d709b0f"}
+[2017-10-16 14:27:12] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"d709b0f"}
+[2017-10-16 14:27:12] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d709b0f"}
+[2017-10-16 14:27:12] vk-test.INFO: count: 12 [] {"uid":"d709b0f"}
+[2017-10-16 14:27:18] vk-test.INFO: Get data from cache by key=price_4_4_desc [] {"uid":"949d99c"}
+[2017-10-16 14:27:18] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 4 [] {"uid":"949d99c"}
+[2017-10-16 14:27:18] vk-test.INFO: Save data into cache for key=price_4_4_desc [] {"uid":"949d99c"}
+[2017-10-16 14:27:18] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"949d99c"}
+[2017-10-16 14:27:18] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"949d99c"}
+[2017-10-16 14:27:18] vk-test.INFO: count: 12 [] {"uid":"949d99c"}
+[2017-10-16 14:27:19] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"d52aa71"}
+[2017-10-16 14:27:19] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"d52aa71"}
+[2017-10-16 14:27:19] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"d52aa71"}
+[2017-10-16 14:27:19] vk-test.INFO: count: 12 [] {"uid":"d52aa71"}
+[2017-10-16 14:27:22] vk-test.INFO: Get data from cache by key=price_4_4_desc [] {"uid":"54da4e7"}
+[2017-10-16 14:27:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"54da4e7"}
+[2017-10-16 14:27:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"54da4e7"}
+[2017-10-16 14:27:22] vk-test.INFO: count: 12 [] {"uid":"54da4e7"}
+[2017-10-16 14:27:23] vk-test.INFO: Get data from cache by key=price_4_8_desc [] {"uid":"b034a87"}
+[2017-10-16 14:27:23] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"b034a87"}
+[2017-10-16 14:27:23] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"b034a87"}
+[2017-10-16 14:27:23] vk-test.INFO: count: 12 [] {"uid":"b034a87"}
+[2017-10-16 14:27:36] vk-test.INFO: Update product. SQL: UPDATE products SET name='carrot', description='vegetable', price=0.2, url='null' WHERE id=1 [] {"uid":"334f83a"}
+[2017-10-16 14:27:36] vk-test.INFO: Delete data from cache by key=price_4_8_desc [] {"uid":"334f83a"}
+[2017-10-16 14:27:36] vk-test.INFO: Get data from cache by key=price_4_8_desc [] {"uid":"798e928"}
+[2017-10-16 14:27:36] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"798e928"}
+[2017-10-16 14:27:36] vk-test.INFO: Save data into cache for key=price_4_8_desc [] {"uid":"798e928"}
+[2017-10-16 14:27:36] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"798e928"}
+[2017-10-16 14:27:36] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"798e928"}
+[2017-10-16 14:27:36] vk-test.INFO: count: 12 [] {"uid":"798e928"}
+[2017-10-16 14:27:43] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"4aebecd"}
+[2017-10-16 14:27:43] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4aebecd"}
+[2017-10-16 14:27:43] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"4aebecd"}
+[2017-10-16 14:27:43] vk-test.INFO: count: 12 [] {"uid":"4aebecd"}
+[2017-10-16 14:27:47] vk-test.INFO: Get data from cache by key=price_4_8_desc [] {"uid":"b41c8e5"}
+[2017-10-16 14:27:47] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"b41c8e5"}
+[2017-10-16 14:27:47] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"b41c8e5"}
+[2017-10-16 14:27:47] vk-test.INFO: count: 12 [] {"uid":"b41c8e5"}
+[2017-10-16 14:28:00] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=10, url='test' WHERE id=11 [] {"uid":"b834c33"}
+[2017-10-16 14:28:00] vk-test.INFO: Delete data from cache by key=price_4_8_desc [] {"uid":"b834c33"}
+[2017-10-16 14:28:00] vk-test.INFO: Get data from cache by key=price_4_8_desc [] {"uid":"0afb4ca"}
+[2017-10-16 14:28:00] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"0afb4ca"}
+[2017-10-16 14:28:00] vk-test.INFO: Save data into cache for key=price_4_8_desc [] {"uid":"0afb4ca"}
+[2017-10-16 14:28:00] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"0afb4ca"}
+[2017-10-16 14:28:00] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0afb4ca"}
+[2017-10-16 14:28:00] vk-test.INFO: count: 12 [] {"uid":"0afb4ca"}
+[2017-10-16 14:28:05] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"6a1d0c9"}
+[2017-10-16 14:28:05] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"6a1d0c9"}
+[2017-10-16 14:28:05] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"6a1d0c9"}
+[2017-10-16 14:28:05] vk-test.INFO: count: 12 [] {"uid":"6a1d0c9"}
+[2017-10-16 14:29:28] vk-test.INFO: Update product. SQL: UPDATE products SET name='apple', description='tasty fruit', price=6.7, url=null WHERE id=3 [] {"uid":"20484d3"}
+[2017-10-16 14:29:28] vk-test.INFO: Delete data from cache by key=price_4_0_desc [] {"uid":"20484d3"}
+[2017-10-16 14:29:28] vk-test.INFO: Get data from cache by key=price_4_0_desc [] {"uid":"52f704a"}
+[2017-10-16 14:29:28] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"52f704a"}
+[2017-10-16 14:29:28] vk-test.INFO: Save data into cache for key=price_4_0_desc [] {"uid":"52f704a"}
+[2017-10-16 14:29:28] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"52f704a"}
+[2017-10-16 14:29:28] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"52f704a"}
+[2017-10-16 14:29:28] vk-test.INFO: count: 12 [] {"uid":"52f704a"}
+[2017-10-17 03:45:58] vk-test.INFO: Get data from cache by key=id_4_0_asc [] {"uid":"3acb6b7"}
+[2017-10-17 03:45:58] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"3acb6b7"}
+[2017-10-17 03:45:58] vk-test.INFO: Save data into cache for key=id_4_0_asc [] {"uid":"3acb6b7"}
+[2017-10-17 03:45:58] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"3acb6b7"}
+[2017-10-17 03:45:58] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"3acb6b7"}
+[2017-10-17 03:45:58] vk-test.INFO: count: 12 [] {"uid":"3acb6b7"}
+[2017-10-17 03:45:58] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"3acb6b7"}
+[2017-10-17 03:46:00] vk-test.INFO: Get data from cache by key=id_4_4_asc [] {"uid":"67d4d85"}
+[2017-10-17 03:46:00] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"67d4d85"}
+[2017-10-17 03:46:00] vk-test.INFO: Save data into cache for key=id_4_4_asc [] {"uid":"67d4d85"}
+[2017-10-17 03:46:00] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"67d4d85"}
+[2017-10-17 03:46:01] vk-test.INFO: Get data from cache by key=id_4_8_asc [] {"uid":"92c9d17"}
+[2017-10-17 03:46:01] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"92c9d17"}
+[2017-10-17 03:46:01] vk-test.INFO: Save data into cache for key=id_4_8_asc [] {"uid":"92c9d17"}
+[2017-10-17 03:46:01] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"92c9d17"}
+[2017-10-17 03:46:04] vk-test.INFO: Get data from cache by key=id_4_0_asc [] {"uid":"3a2d4b7"}
+[2017-10-17 03:46:04] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"3a2d4b7"}
+[2017-10-17 03:46:06] vk-test.INFO: Get data from cache by key=id_4_4_asc [] {"uid":"cb1494b"}
+[2017-10-17 03:46:06] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"cb1494b"}
+[2017-10-17 03:46:06] vk-test.INFO: Get data from cache by key=id_4_8_asc [] {"uid":"731a353"}
+[2017-10-17 03:46:06] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"731a353"}
+[2017-10-17 03:49:37] vk-test.INFO: Get data from cache by key=id_4_0_asc [] {"uid":"7b26d3e"}
+[2017-10-17 03:49:37] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7b26d3e"}

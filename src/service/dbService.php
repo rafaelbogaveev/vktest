@@ -20,7 +20,6 @@ function getProductsSortedById($limit, $offset, $order){
     require (__DIR__.'/../data/db.php');
     global $app;
 
-    // resolving logger
     $logger = $app->getContainer()->get('logger');
 
     $query = 'Select * From products order by id '.$order.' limit '.$limit.' offset '.$offset;
