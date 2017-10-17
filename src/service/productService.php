@@ -15,6 +15,24 @@ require_once ('cacheService.php');
 //key for storing total number of products in cache
 define("count_key", 'total_count');
 
+//key for storing prefix for sorted by price pages
+define('price_prefix_key', 'price_prefix');
+
+//key for storing prefix for sorted by id pages
+define('id_prefix_desc_key', 'id_desc_prefix');
+
+//key for storing prefix for sorted by id pages
+define('id_prefix_asc_key', 'id_asc_prefix');
+
+define('price_field', 'price');
+
+define('id_field', 'id');
+
+define('asc', 'asc');
+
+define('desc', 'desc');
+
+
 
 /**
  * @param $limit - max amount of products that should be returned
@@ -25,8 +43,8 @@ define("count_key", 'total_count');
 function getProducts($limit, $offset, $orderField, $orderType){
     require (__DIR__ . '/../data/db.php');
 
-    $orderType = $orderType=='desc' ? $orderType: 'asc';
-    $orderField = 'price' == $orderField ? $orderField : 'id';
+    $orderType = $orderType==desc ? $orderType: asc;
+    $orderField = price_field == $orderField ? $orderField : id_field;
 
     //form key by page requested parameters
     $key = getKeyForPage($orderField, $limit, $offset, $orderType);
@@ -38,7 +56,7 @@ function getProducts($limit, $offset, $orderField, $orderType){
     if (null != $products  && 0<count($products))
         return $products;
 
-    $products = 'price' == $orderField ? getProductsSortedByPrice($limit, $offset, $orderType)
+    $products = price_field == $orderField ? getProductsSortedByPrice($limit, $offset, $orderType)
                                        : getProductsSortedById($limit, $offset, $orderType);
 
     //save list of products to cache
@@ -57,41 +75,42 @@ function getProducts($limit, $offset, $orderField, $orderType){
 function save($id, $name, $description, $price, $url, $limit, $offset, $orderField, $orderType){
     if (null == $id) {
         insertProduct($name, $description, $price, $url);
-        $count = getValueByKey(count_key);
-        saveValueByKey(count_key, $count+1);
+
+        incTotalCount();
+        refreshPages(price_field, asc);
+        refreshPages(id_field, desc);
+        refreshLastPageSortedByIdAsc($limit);
     }
     else{
         updateProduct($id, $name, $description, $price, $url);
+        refreshPages(price_field, asc);
     }
-
-    $orderType = $orderType=='desc' ? $orderType: 'asc';
-    $orderField = 'price' == $orderField ? $orderField : 'id';
-
-    //form key by page requested parameters
-    $key = getKeyForPage($orderField, $limit, $offset, $orderType);
-
-    //delete data for page from cache
-    deleteByKey($key);
 }
 
+
+/**
+ * @param $id
+ * @param $limit
+ * @param $offset
+ * @param $orderField
+ * @param $orderType
+ * @throws Exception
+ */
 function delete($id, $limit, $offset, $orderField, $orderType){
     if (null ==  $id)
         throw new Exception('Id cannot be null');
-
-    $orderType = $orderType=='desc' ? $orderType: 'asc';
-    $orderField = 'price' == $orderField ? $orderField : 'id';
-
-    //form key by page requested parameters
-    $key = getKeyForPage($orderField, $limit, $offset, $orderType);
 
     deleteProduct($id);
 
     // we cannot be sure whether element with id exists
     deleteByKey(count_key);
 
-    //delete data for page from cache. It needs to be refreshed.
-    deleteByKey($key);
+    //refresh pages.
+    refreshPages(id_field, asc);
+    refreshPages(id_field, desc);
+    refreshPages(price_field, asc);
 }
+
 
 /**
  * Get total number of stored products
@@ -115,13 +134,24 @@ function getCount(){
 /**
  *
  */
-function deleteSortedByPricePagesFromCache(){
-
+function refreshPages($orderField, $orderType){
+    changeKeyPrefix($orderField, $orderType);
 }
 
-/**
- *
- */
-function deleteSortedByIdPagesFromCache(){
-
+function refreshLastPageSortedByIdAsc($limit)
+{
+    $count = getCount();
+    $page = ceil($count / $limit);
+    $offset = $limit * ($page - 1);
+    $key = getKeyForPage(id_field, $limit, $offset,asc);
+    deleteByKey($key);
 }
+
+
+function incTotalCount(){
+    $count = getValueByKey(count_key);
+    if (null != $count) {
+        saveValueByKey(count_key, $count + 1);
+    }
+}
+

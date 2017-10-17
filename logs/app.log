@@ -777,3 +777,734 @@
 [2017-10-17 03:46:06] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"731a353"}
 [2017-10-17 03:49:37] vk-test.INFO: Get data from cache by key=id_4_0_asc [] {"uid":"7b26d3e"}
 [2017-10-17 03:49:37] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7b26d3e"}
+[2017-10-17 05:05:30] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"e5f7032"}
+[2017-10-17 05:05:30] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"e5f7032"}
+[2017-10-17 05:05:30] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"e5f7032"}
+[2017-10-17 05:05:30] vk-test.INFO: Save data into cache for key=id1_4_8_asc [] {"uid":"e5f7032"}
+[2017-10-17 05:05:30] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"e5f7032"}
+[2017-10-17 05:05:44] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=0.3, url='null' WHERE id=12 [] {"uid":"3aaa8d6"}
+[2017-10-17 05:05:46] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=0.3, url='null' WHERE id=12 [] {"uid":"648c81e"}
+[2017-10-17 05:36:03] vk-test.INFO: Get prefix for id_asc [] {"uid":"052feb5"}
+[2017-10-17 05:36:03] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"052feb5"}
+[2017-10-17 05:36:03] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"052feb5"}
+[2017-10-17 05:36:03] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"052feb5"}
+[2017-10-17 05:36:03] vk-test.INFO: Save data into cache for key=id1_4_0_asc [] {"uid":"052feb5"}
+[2017-10-17 05:36:03] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"052feb5"}
+[2017-10-17 05:36:05] vk-test.INFO: Get prefix for id_asc [] {"uid":"d3c599c"}
+[2017-10-17 05:36:05] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"d3c599c"}
+[2017-10-17 05:36:05] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"d3c599c"}
+[2017-10-17 05:36:05] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"d3c599c"}
+[2017-10-17 05:36:07] vk-test.INFO: Get prefix for id_asc [] {"uid":"3e5fb20"}
+[2017-10-17 05:36:07] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"3e5fb20"}
+[2017-10-17 05:36:07] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"3e5fb20"}
+[2017-10-17 05:36:07] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"3e5fb20"}
+[2017-10-17 05:36:13] vk-test.INFO: Get prefix for id_asc [] {"uid":"002d445"}
+[2017-10-17 05:36:13] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"002d445"}
+[2017-10-17 05:36:13] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"002d445"}
+[2017-10-17 05:36:13] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"002d445"}
+[2017-10-17 05:36:21] vk-test.INFO: Get prefix for price_asc [] {"uid":"51ec9f8"}
+[2017-10-17 05:36:21] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"51ec9f8"}
+[2017-10-17 05:36:21] vk-test.INFO: Get data from cache by key=price1_4_8_asc [] {"uid":"51ec9f8"}
+[2017-10-17 05:36:21] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 8 [] {"uid":"51ec9f8"}
+[2017-10-17 05:36:21] vk-test.INFO: Save data into cache for key=price1_4_8_asc [] {"uid":"51ec9f8"}
+[2017-10-17 05:36:21] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"51ec9f8"}
+[2017-10-17 05:36:28] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=1, url='test' WHERE id=11 [] {"uid":"96e296b"}
+[2017-10-17 05:36:29] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=1, url='test' WHERE id=11 [] {"uid":"e272055"}
+[2017-10-17 05:36:37] vk-test.INFO: Get prefix for price_asc [] {"uid":"886a418"}
+[2017-10-17 05:36:37] vk-test.INFO: Get data from cache by key=price1_4_0_asc [] {"uid":"886a418"}
+[2017-10-17 05:36:37] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 0 [] {"uid":"886a418"}
+[2017-10-17 05:36:37] vk-test.INFO: Save data into cache for key=price1_4_0_asc [] {"uid":"886a418"}
+[2017-10-17 05:36:37] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"886a418"}
+[2017-10-17 05:36:46] vk-test.INFO: Get prefix for price_asc [] {"uid":"bbf5f60"}
+[2017-10-17 05:36:46] vk-test.INFO: Get data from cache by key=price1_4_8_asc [] {"uid":"bbf5f60"}
+[2017-10-17 05:36:46] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"bbf5f60"}
+[2017-10-17 05:36:53] vk-test.INFO: Get prefix for price_asc [] {"uid":"dfb5126"}
+[2017-10-17 05:36:53] vk-test.INFO: Get data from cache by key=price1_4_0_asc [] {"uid":"dfb5126"}
+[2017-10-17 05:36:53] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"dfb5126"}
+[2017-10-17 05:36:55] vk-test.INFO: Get prefix for price_asc [] {"uid":"744f996"}
+[2017-10-17 05:36:55] vk-test.INFO: Get data from cache by key=price1_4_8_asc [] {"uid":"744f996"}
+[2017-10-17 05:36:55] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"744f996"}
+[2017-10-17 05:41:04] vk-test.INFO: Get prefix for id_asc [] {"uid":"00dcb42"}
+[2017-10-17 05:41:04] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"00dcb42"}
+[2017-10-17 05:41:04] vk-test.INFO: Key request for id_asc: id1_4_0_asc [] {"uid":"00dcb42"}
+[2017-10-17 05:41:04] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"00dcb42"}
+[2017-10-17 05:41:04] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"00dcb42"}
+[2017-10-17 05:41:08] vk-test.INFO: Get prefix for price_asc [] {"uid":"70a95a9"}
+[2017-10-17 05:41:08] vk-test.INFO: Key request for price_asc: price1_4_0_asc [] {"uid":"70a95a9"}
+[2017-10-17 05:41:08] vk-test.INFO: Get data from cache by key=price1_4_0_asc [] {"uid":"70a95a9"}
+[2017-10-17 05:41:08] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"70a95a9"}
+[2017-10-17 05:41:09] vk-test.INFO: Get prefix for price_desc [] {"uid":"1fc21cd"}
+[2017-10-17 05:41:09] vk-test.INFO: Key request for price_desc: price1_4_0_desc [] {"uid":"1fc21cd"}
+[2017-10-17 05:41:09] vk-test.INFO: Get data from cache by key=price1_4_0_desc [] {"uid":"1fc21cd"}
+[2017-10-17 05:41:09] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"1fc21cd"}
+[2017-10-17 05:41:09] vk-test.INFO: Save data into cache for key=price1_4_0_desc [] {"uid":"1fc21cd"}
+[2017-10-17 05:41:09] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"1fc21cd"}
+[2017-10-17 05:41:12] vk-test.INFO: Get prefix for price_desc [] {"uid":"6ef1e2a"}
+[2017-10-17 05:41:12] vk-test.INFO: Key request for price_desc: price1_4_4_desc [] {"uid":"6ef1e2a"}
+[2017-10-17 05:41:12] vk-test.INFO: Get data from cache by key=price1_4_4_desc [] {"uid":"6ef1e2a"}
+[2017-10-17 05:41:12] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 4 [] {"uid":"6ef1e2a"}
+[2017-10-17 05:41:12] vk-test.INFO: Save data into cache for key=price1_4_4_desc [] {"uid":"6ef1e2a"}
+[2017-10-17 05:41:12] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"6ef1e2a"}
+[2017-10-17 05:41:13] vk-test.INFO: Get prefix for price_desc [] {"uid":"879ad24"}
+[2017-10-17 05:41:13] vk-test.INFO: Key request for price_desc: price1_4_8_desc [] {"uid":"879ad24"}
+[2017-10-17 05:41:13] vk-test.INFO: Get data from cache by key=price1_4_8_desc [] {"uid":"879ad24"}
+[2017-10-17 05:41:13] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"879ad24"}
+[2017-10-17 05:41:13] vk-test.INFO: Save data into cache for key=price1_4_8_desc [] {"uid":"879ad24"}
+[2017-10-17 05:41:13] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"879ad24"}
+[2017-10-17 05:41:23] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=10, url='test' WHERE id=11 [] {"uid":"60aedbf"}
+[2017-10-17 05:41:24] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=10, url='test' WHERE id=11 [] {"uid":"ede0961"}
+[2017-10-17 05:41:27] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=10, url='test' WHERE id=11 [] {"uid":"8ca2a9a"}
+[2017-10-17 05:41:28] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=10, url='test' WHERE id=11 [] {"uid":"e982580"}
+[2017-10-17 05:42:48] vk-test.INFO: Update product. SQL: UPDATE products SET name='banana', description='test', price=10, url='test' WHERE id=11 [] {"uid":"9ab79ec"}
+[2017-10-17 05:42:54] vk-test.INFO: Get prefix for id_asc [] {"uid":"3f04848"}
+[2017-10-17 05:42:54] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"3f04848"}
+[2017-10-17 05:42:54] vk-test.INFO: Key requested for id_asc: id1_4_0_asc [] {"uid":"3f04848"}
+[2017-10-17 05:42:54] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"3f04848"}
+[2017-10-17 05:42:54] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"3f04848"}
+[2017-10-17 05:47:54] vk-test.INFO: Get prefix for id_asc [] {"uid":"f9d308b"}
+[2017-10-17 05:47:54] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"f9d308b"}
+[2017-10-17 05:47:54] vk-test.INFO: Key requested for id_asc: id1_4_0_asc [] {"uid":"f9d308b"}
+[2017-10-17 05:47:54] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"f9d308b"}
+[2017-10-17 05:47:54] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f9d308b"}
+[2017-10-17 05:47:56] vk-test.INFO: Get prefix for price_asc [] {"uid":"971679a"}
+[2017-10-17 05:47:56] vk-test.INFO: Key requested for price_asc: price1_4_0_asc [] {"uid":"971679a"}
+[2017-10-17 05:47:56] vk-test.INFO: Get data from cache by key=price1_4_0_asc [] {"uid":"971679a"}
+[2017-10-17 05:47:56] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"971679a"}
+[2017-10-17 05:47:57] vk-test.INFO: Get prefix for price_desc [] {"uid":"6bb3a10"}
+[2017-10-17 05:47:57] vk-test.INFO: Key requested for price_desc: price1_4_0_desc [] {"uid":"6bb3a10"}
+[2017-10-17 05:47:57] vk-test.INFO: Get data from cache by key=price1_4_0_desc [] {"uid":"6bb3a10"}
+[2017-10-17 05:47:57] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"6bb3a10"}
+[2017-10-17 05:47:59] vk-test.INFO: Get prefix for price_desc [] {"uid":"3030197"}
+[2017-10-17 05:47:59] vk-test.INFO: Key requested for price_desc: price1_4_8_desc [] {"uid":"3030197"}
+[2017-10-17 05:47:59] vk-test.INFO: Get data from cache by key=price1_4_8_desc [] {"uid":"3030197"}
+[2017-10-17 05:47:59] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"3030197"}
+[2017-10-17 05:48:08] vk-test.INFO: Update product. SQL: UPDATE products SET name='carrot', description='vegetable', price=20, url='null' WHERE id=1 [] {"uid":"bb34c31"}
+[2017-10-17 05:48:08] vk-test.INFO: Changing prefix for price_asc [] {"uid":"bb34c31"}
+[2017-10-17 05:48:08] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"bb34c31"}
+[2017-10-17 05:48:08] vk-test.INFO: New prefix for price_asc: 2 [] {"uid":"bb34c31"}
+[2017-10-17 05:48:08] vk-test.INFO: Get prefix for price_desc [] {"uid":"876ab73"}
+[2017-10-17 05:48:08] vk-test.INFO: Key requested for price_desc: price2_4_8_desc [] {"uid":"876ab73"}
+[2017-10-17 05:48:08] vk-test.INFO: Get data from cache by key=price2_4_8_desc [] {"uid":"876ab73"}
+[2017-10-17 05:48:08] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"876ab73"}
+[2017-10-17 05:48:08] vk-test.INFO: Save data into cache for key=price2_4_8_desc [] {"uid":"876ab73"}
+[2017-10-17 05:48:08] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"876ab73"}
+[2017-10-17 05:48:11] vk-test.INFO: Get prefix for price_desc [] {"uid":"559b082"}
+[2017-10-17 05:48:11] vk-test.INFO: Key requested for price_desc: price2_4_0_desc [] {"uid":"559b082"}
+[2017-10-17 05:48:11] vk-test.INFO: Get data from cache by key=price2_4_0_desc [] {"uid":"559b082"}
+[2017-10-17 05:48:11] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"559b082"}
+[2017-10-17 05:48:11] vk-test.INFO: Save data into cache for key=price2_4_0_desc [] {"uid":"559b082"}
+[2017-10-17 05:48:11] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"559b082"}
+[2017-10-17 05:48:15] vk-test.INFO: Get prefix for price_desc [] {"uid":"675c8da"}
+[2017-10-17 05:48:15] vk-test.INFO: Key requested for price_desc: price2_4_4_desc [] {"uid":"675c8da"}
+[2017-10-17 05:48:15] vk-test.INFO: Get data from cache by key=price2_4_4_desc [] {"uid":"675c8da"}
+[2017-10-17 05:48:15] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 4 [] {"uid":"675c8da"}
+[2017-10-17 05:48:15] vk-test.INFO: Save data into cache for key=price2_4_4_desc [] {"uid":"675c8da"}
+[2017-10-17 05:48:15] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"675c8da"}
+[2017-10-17 05:48:17] vk-test.INFO: Get prefix for price_desc [] {"uid":"a322f08"}
+[2017-10-17 05:48:17] vk-test.INFO: Key requested for price_desc: price2_4_8_desc [] {"uid":"a322f08"}
+[2017-10-17 05:48:17] vk-test.INFO: Get data from cache by key=price2_4_8_desc [] {"uid":"a322f08"}
+[2017-10-17 05:48:17] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"a322f08"}
+[2017-10-17 05:48:20] vk-test.INFO: Get prefix for price_desc [] {"uid":"b2ea3c1"}
+[2017-10-17 05:48:20] vk-test.INFO: Key requested for price_desc: price2_4_0_desc [] {"uid":"b2ea3c1"}
+[2017-10-17 05:48:20] vk-test.INFO: Get data from cache by key=price2_4_0_desc [] {"uid":"b2ea3c1"}
+[2017-10-17 05:48:20] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"b2ea3c1"}
+[2017-10-17 05:48:22] vk-test.INFO: Get prefix for price_desc [] {"uid":"7b06a4b"}
+[2017-10-17 05:48:22] vk-test.INFO: Key requested for price_desc: price2_4_4_desc [] {"uid":"7b06a4b"}
+[2017-10-17 05:48:22] vk-test.INFO: Get data from cache by key=price2_4_4_desc [] {"uid":"7b06a4b"}
+[2017-10-17 05:48:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7b06a4b"}
+[2017-10-17 05:48:26] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=8 [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Delete data from cache by key=total_count [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Changing prefix for id_asc [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Save data into cache for key=id_asc_prefix [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: New prefix for id_asc: 1 [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Changing prefix for id_desc [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: New prefix for id_desc: 2 [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Changing prefix for price_asc [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: New prefix for price_asc: 3 [] {"uid":"4079872"}
+[2017-10-17 05:48:26] vk-test.INFO: Get prefix for price_desc [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Key requested for price_desc: price3_4_4_desc [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Get data from cache by key=price3_4_4_desc [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 4 [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Save data into cache for key=price3_4_4_desc [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: count: 11 [] {"uid":"1af716f"}
+[2017-10-17 05:48:26] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"1af716f"}
+[2017-10-17 05:48:30] vk-test.INFO: Get prefix for price_desc [] {"uid":"5dcd5b6"}
+[2017-10-17 05:48:30] vk-test.INFO: Key requested for price_desc: price3_4_8_desc [] {"uid":"5dcd5b6"}
+[2017-10-17 05:48:30] vk-test.INFO: Get data from cache by key=price3_4_8_desc [] {"uid":"5dcd5b6"}
+[2017-10-17 05:48:30] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"5dcd5b6"}
+[2017-10-17 05:48:30] vk-test.INFO: Save data into cache for key=price3_4_8_desc [] {"uid":"5dcd5b6"}
+[2017-10-17 05:48:30] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"5dcd5b6"}
+[2017-10-17 05:48:33] vk-test.INFO: Get prefix for price_desc [] {"uid":"72503e0"}
+[2017-10-17 05:48:33] vk-test.INFO: Key requested for price_desc: price3_4_0_desc [] {"uid":"72503e0"}
+[2017-10-17 05:48:33] vk-test.INFO: Get data from cache by key=price3_4_0_desc [] {"uid":"72503e0"}
+[2017-10-17 05:48:33] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"72503e0"}
+[2017-10-17 05:48:33] vk-test.INFO: Save data into cache for key=price3_4_0_desc [] {"uid":"72503e0"}
+[2017-10-17 05:48:33] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"72503e0"}
+[2017-10-17 07:03:11] vk-test.INFO: Get prefix for price_desc [] {"uid":"e02d094"}
+[2017-10-17 07:03:11] vk-test.INFO: Key requested for price_desc: price3_4_8_desc [] {"uid":"e02d094"}
+[2017-10-17 07:03:11] vk-test.INFO: Get data from cache by key=price3_4_8_desc [] {"uid":"e02d094"}
+[2017-10-17 07:03:11] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"e02d094"}
+[2017-10-17 07:03:13] vk-test.INFO: Get prefix for price_desc [] {"uid":"80d4ace"}
+[2017-10-17 07:03:13] vk-test.INFO: Key requested for price_desc: price3_4_0_desc [] {"uid":"80d4ace"}
+[2017-10-17 07:03:13] vk-test.INFO: Get data from cache by key=price3_4_0_desc [] {"uid":"80d4ace"}
+[2017-10-17 07:03:13] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"80d4ace"}
+[2017-10-17 07:03:42] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('lemon', null, 4.1, null) [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Changing prefix for price_asc [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: New prefix for price: 4 [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Changing prefix for id_desc [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: New prefix for id_desc: 3 [] {"uid":"c5ead74"}
+[2017-10-17 07:03:42] vk-test.INFO: Get prefix for price_desc [] {"uid":"2e1934c"}
+[2017-10-17 07:03:42] vk-test.INFO: Key requested for price_desc: price4_4_0_desc [] {"uid":"2e1934c"}
+[2017-10-17 07:03:42] vk-test.INFO: Get data from cache by key=price4_4_0_desc [] {"uid":"2e1934c"}
+[2017-10-17 07:03:42] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"2e1934c"}
+[2017-10-17 07:03:42] vk-test.INFO: Save data into cache for key=price4_4_0_desc [] {"uid":"2e1934c"}
+[2017-10-17 07:03:42] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"2e1934c"}
+[2017-10-17 07:03:51] vk-test.INFO: Get prefix for price_desc [] {"uid":"964407e"}
+[2017-10-17 07:03:51] vk-test.INFO: Key requested for price_desc: price4_4_8_desc [] {"uid":"964407e"}
+[2017-10-17 07:03:51] vk-test.INFO: Get data from cache by key=price4_4_8_desc [] {"uid":"964407e"}
+[2017-10-17 07:03:51] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"964407e"}
+[2017-10-17 07:03:51] vk-test.INFO: Save data into cache for key=price4_4_8_desc [] {"uid":"964407e"}
+[2017-10-17 07:03:51] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"964407e"}
+[2017-10-17 07:06:14] vk-test.INFO: Get prefix for price_desc [] {"uid":"a0a6761"}
+[2017-10-17 07:06:14] vk-test.INFO: Key requested for price_desc: price4_4_0_desc [] {"uid":"a0a6761"}
+[2017-10-17 07:06:14] vk-test.INFO: Get data from cache by key=price4_4_0_desc [] {"uid":"a0a6761"}
+[2017-10-17 07:06:14] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"a0a6761"}
+[2017-10-17 07:06:15] vk-test.INFO: Get prefix for price_desc [] {"uid":"79927e6"}
+[2017-10-17 07:06:15] vk-test.INFO: Key requested for price_desc: price4_4_8_desc [] {"uid":"79927e6"}
+[2017-10-17 07:06:15] vk-test.INFO: Get data from cache by key=price4_4_8_desc [] {"uid":"79927e6"}
+[2017-10-17 07:06:15] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"79927e6"}
+[2017-10-17 07:06:16] vk-test.INFO: Get prefix for price_desc [] {"uid":"54af3f4"}
+[2017-10-17 07:06:16] vk-test.INFO: Key requested for price_desc: price4_4_4_desc [] {"uid":"54af3f4"}
+[2017-10-17 07:06:16] vk-test.INFO: Get data from cache by key=price4_4_4_desc [] {"uid":"54af3f4"}
+[2017-10-17 07:06:16] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 4 [] {"uid":"54af3f4"}
+[2017-10-17 07:06:16] vk-test.INFO: Save data into cache for key=price4_4_4_desc [] {"uid":"54af3f4"}
+[2017-10-17 07:06:16] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"54af3f4"}
+[2017-10-17 07:06:17] vk-test.INFO: Get prefix for price_desc [] {"uid":"9e8e7ac"}
+[2017-10-17 07:06:17] vk-test.INFO: Key requested for price_desc: price4_4_0_desc [] {"uid":"9e8e7ac"}
+[2017-10-17 07:06:17] vk-test.INFO: Get data from cache by key=price4_4_0_desc [] {"uid":"9e8e7ac"}
+[2017-10-17 07:06:17] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"9e8e7ac"}
+[2017-10-17 07:06:41] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('Mango', 'Tropic fruit', 15, null) [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: Changing prefix for price_asc [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: New prefix for price: 5 [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: Changing prefix for id_desc [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"9399e79"}
+[2017-10-17 07:06:41] vk-test.INFO: New prefix for id_desc: 4 [] {"uid":"9399e79"}
+[2017-10-17 07:06:44] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('Mango', 'Tropic fruit', 15, null) [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: Changing prefix for price_asc [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: New prefix for price: 6 [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: Changing prefix for id_desc [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"7fc3e85"}
+[2017-10-17 07:06:44] vk-test.INFO: New prefix for id_desc: 5 [] {"uid":"7fc3e85"}
+[2017-10-17 07:07:25] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('Mango', 'Tropic fruit', 15, null) [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Changing prefix for price_asc [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: New prefix for price: 7 [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Changing prefix for id_desc [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: New prefix for id_desc: 6 [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Get prefix for id_asc [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Key requested for id_asc: id1_4_11_asc [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Deleting data from cache by key=id1_4_11_asc [] {"uid":"4c8f1ff"}
+[2017-10-17 07:07:25] vk-test.INFO: Get prefix for price_desc [] {"uid":"fcd1ded"}
+[2017-10-17 07:07:25] vk-test.INFO: Key requested for price_desc: price7_4_0_desc [] {"uid":"fcd1ded"}
+[2017-10-17 07:07:25] vk-test.INFO: Get data from cache by key=price7_4_0_desc [] {"uid":"fcd1ded"}
+[2017-10-17 07:07:25] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"fcd1ded"}
+[2017-10-17 07:07:25] vk-test.INFO: Save data into cache for key=price7_4_0_desc [] {"uid":"fcd1ded"}
+[2017-10-17 07:07:25] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"fcd1ded"}
+[2017-10-17 07:07:42] vk-test.INFO: Get prefix for price_desc [] {"uid":"33323fc"}
+[2017-10-17 07:07:42] vk-test.INFO: Key requested for price_desc: price7_4_8_desc [] {"uid":"33323fc"}
+[2017-10-17 07:07:42] vk-test.INFO: Get data from cache by key=price7_4_8_desc [] {"uid":"33323fc"}
+[2017-10-17 07:07:42] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"33323fc"}
+[2017-10-17 07:07:42] vk-test.INFO: Save data into cache for key=price7_4_8_desc [] {"uid":"33323fc"}
+[2017-10-17 07:07:42] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"33323fc"}
+[2017-10-17 07:07:46] vk-test.INFO: Get prefix for id_asc [] {"uid":"ecf4387"}
+[2017-10-17 07:07:46] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"ecf4387"}
+[2017-10-17 07:07:46] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"ecf4387"}
+[2017-10-17 07:07:46] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"ecf4387"}
+[2017-10-17 07:07:50] vk-test.INFO: Get prefix for id_desc [] {"uid":"585e4ab"}
+[2017-10-17 07:07:50] vk-test.INFO: Key requested for id_desc: id6_4_8_desc [] {"uid":"585e4ab"}
+[2017-10-17 07:07:50] vk-test.INFO: Get data from cache by key=id6_4_8_desc [] {"uid":"585e4ab"}
+[2017-10-17 07:07:50] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id desc limit 4 offset 8 [] {"uid":"585e4ab"}
+[2017-10-17 07:07:50] vk-test.INFO: Save data into cache for key=id6_4_8_desc [] {"uid":"585e4ab"}
+[2017-10-17 07:07:50] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"585e4ab"}
+[2017-10-17 07:07:54] vk-test.INFO: Get prefix for id_asc [] {"uid":"bcea54d"}
+[2017-10-17 07:07:54] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"bcea54d"}
+[2017-10-17 07:07:54] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"bcea54d"}
+[2017-10-17 07:07:54] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"bcea54d"}
+[2017-10-17 07:07:55] vk-test.INFO: Get prefix for id_desc [] {"uid":"7bc666d"}
+[2017-10-17 07:07:55] vk-test.INFO: Key requested for id_desc: id6_4_8_desc [] {"uid":"7bc666d"}
+[2017-10-17 07:07:55] vk-test.INFO: Get data from cache by key=id6_4_8_desc [] {"uid":"7bc666d"}
+[2017-10-17 07:07:55] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7bc666d"}
+[2017-10-17 07:07:57] vk-test.INFO: Get prefix for id_asc [] {"uid":"2cb31ad"}
+[2017-10-17 07:07:57] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"2cb31ad"}
+[2017-10-17 07:07:57] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"2cb31ad"}
+[2017-10-17 07:07:57] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"2cb31ad"}
+[2017-10-17 07:08:01] vk-test.INFO: Get prefix for id_asc [] {"uid":"038ecaa"}
+[2017-10-17 07:08:01] vk-test.INFO: Key requested for id_asc: id1_4_0_asc [] {"uid":"038ecaa"}
+[2017-10-17 07:08:01] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"038ecaa"}
+[2017-10-17 07:08:01] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"038ecaa"}
+[2017-10-17 07:08:04] vk-test.INFO: Get prefix for id_asc [] {"uid":"46b87c3"}
+[2017-10-17 07:08:04] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"46b87c3"}
+[2017-10-17 07:08:04] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"46b87c3"}
+[2017-10-17 07:08:04] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"46b87c3"}
+[2017-10-17 07:08:09] vk-test.INFO: Get prefix for id_asc [] {"uid":"5040d0b"}
+[2017-10-17 07:08:09] vk-test.INFO: Key requested for id_asc: id1_4_0_asc [] {"uid":"5040d0b"}
+[2017-10-17 07:08:09] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"5040d0b"}
+[2017-10-17 07:08:09] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"5040d0b"}
+[2017-10-17 07:08:11] vk-test.INFO: Get prefix for id_asc [] {"uid":"6721947"}
+[2017-10-17 07:08:11] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"6721947"}
+[2017-10-17 07:08:11] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"6721947"}
+[2017-10-17 07:08:11] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"6721947"}
+[2017-10-17 07:08:13] vk-test.INFO: Get prefix for id_asc [] {"uid":"92eda75"}
+[2017-10-17 07:08:13] vk-test.INFO: Key requested for id_asc: id1_4_0_asc [] {"uid":"92eda75"}
+[2017-10-17 07:08:13] vk-test.INFO: Get data from cache by key=id1_4_0_asc [] {"uid":"92eda75"}
+[2017-10-17 07:08:13] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"92eda75"}
+[2017-10-17 07:08:23] vk-test.INFO: Get prefix for id_asc [] {"uid":"022d206"}
+[2017-10-17 07:08:23] vk-test.INFO: Key requested for id_asc: id1_4_4_asc [] {"uid":"022d206"}
+[2017-10-17 07:08:23] vk-test.INFO: Get data from cache by key=id1_4_4_asc [] {"uid":"022d206"}
+[2017-10-17 07:08:23] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"022d206"}
+[2017-10-17 07:08:23] vk-test.INFO: Save data into cache for key=id1_4_4_asc [] {"uid":"022d206"}
+[2017-10-17 07:08:23] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"022d206"}
+[2017-10-17 07:08:25] vk-test.INFO: Get prefix for id_asc [] {"uid":"08e7c28"}
+[2017-10-17 07:08:25] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"08e7c28"}
+[2017-10-17 07:08:25] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"08e7c28"}
+[2017-10-17 07:08:25] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"08e7c28"}
+[2017-10-17 07:08:39] vk-test.INFO: Get prefix for price_asc [] {"uid":"c9c34e3"}
+[2017-10-17 07:08:39] vk-test.INFO: Key requested for price_asc: price7_4_8_asc [] {"uid":"c9c34e3"}
+[2017-10-17 07:08:39] vk-test.INFO: Get data from cache by key=price7_4_8_asc [] {"uid":"c9c34e3"}
+[2017-10-17 07:08:39] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 8 [] {"uid":"c9c34e3"}
+[2017-10-17 07:08:39] vk-test.INFO: Save data into cache for key=price7_4_8_asc [] {"uid":"c9c34e3"}
+[2017-10-17 07:08:39] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"c9c34e3"}
+[2017-10-17 07:09:01] vk-test.INFO: Get prefix for id_asc [] {"uid":"66e821d"}
+[2017-10-17 07:09:01] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"66e821d"}
+[2017-10-17 07:09:01] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"66e821d"}
+[2017-10-17 07:09:01] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"66e821d"}
+[2017-10-17 07:09:02] vk-test.INFO: Get prefix for id_desc [] {"uid":"0ec430f"}
+[2017-10-17 07:09:02] vk-test.INFO: Key requested for id_desc: id6_4_8_desc [] {"uid":"0ec430f"}
+[2017-10-17 07:09:02] vk-test.INFO: Get data from cache by key=id6_4_8_desc [] {"uid":"0ec430f"}
+[2017-10-17 07:09:02] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"0ec430f"}
+[2017-10-17 07:09:03] vk-test.INFO: Get prefix for id_asc [] {"uid":"7c15b33"}
+[2017-10-17 07:09:03] vk-test.INFO: Key requested for id_asc: id1_4_8_asc [] {"uid":"7c15b33"}
+[2017-10-17 07:09:03] vk-test.INFO: Get data from cache by key=id1_4_8_asc [] {"uid":"7c15b33"}
+[2017-10-17 07:09:03] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7c15b33"}
+[2017-10-17 07:09:07] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=12 [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Deleting data from cache by key=total_count [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Changing prefix for id_asc [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Save data into cache for key=id_asc_prefix [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: New prefix for id_asc: 2 [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Changing prefix for id_desc [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: New prefix for id_desc: 7 [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Changing prefix for price_asc [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: New prefix for price: 8 [] {"uid":"e667a80"}
+[2017-10-17 07:09:07] vk-test.INFO: Get prefix for id_asc [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Save data into cache for key=id2_4_8_asc [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: count: 14 [] {"uid":"f61391a"}
+[2017-10-17 07:09:07] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"f61391a"}
+[2017-10-17 07:09:12] vk-test.INFO: Get prefix for id_asc [] {"uid":"0dda1c4"}
+[2017-10-17 07:09:12] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"0dda1c4"}
+[2017-10-17 07:09:12] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"0dda1c4"}
+[2017-10-17 07:09:12] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"0dda1c4"}
+[2017-10-17 07:09:12] vk-test.INFO: Save data into cache for key=id2_4_0_asc [] {"uid":"0dda1c4"}
+[2017-10-17 07:09:12] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"0dda1c4"}
+[2017-10-17 07:09:14] vk-test.INFO: Get prefix for id_asc [] {"uid":"4aa0ebf"}
+[2017-10-17 07:09:14] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"4aa0ebf"}
+[2017-10-17 07:09:14] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"4aa0ebf"}
+[2017-10-17 07:09:14] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4aa0ebf"}
+[2017-10-17 07:09:19] vk-test.INFO: Get prefix for id_asc [] {"uid":"b5c4e32"}
+[2017-10-17 07:09:19] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"b5c4e32"}
+[2017-10-17 07:09:19] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"b5c4e32"}
+[2017-10-17 07:09:19] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"b5c4e32"}
+[2017-10-17 07:09:20] vk-test.INFO: Get prefix for id_asc [] {"uid":"f189c76"}
+[2017-10-17 07:09:20] vk-test.INFO: Key requested for id_asc: id2_4_4_asc [] {"uid":"f189c76"}
+[2017-10-17 07:09:20] vk-test.INFO: Get data from cache by key=id2_4_4_asc [] {"uid":"f189c76"}
+[2017-10-17 07:09:20] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"f189c76"}
+[2017-10-17 07:09:20] vk-test.INFO: Save data into cache for key=id2_4_4_asc [] {"uid":"f189c76"}
+[2017-10-17 07:09:21] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f189c76"}
+[2017-10-17 07:09:22] vk-test.INFO: Get prefix for id_asc [] {"uid":"4fac6ec"}
+[2017-10-17 07:09:22] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"4fac6ec"}
+[2017-10-17 07:09:22] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"4fac6ec"}
+[2017-10-17 07:09:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4fac6ec"}
+[2017-10-17 07:09:24] vk-test.INFO: Get prefix for id_asc [] {"uid":"7b08845"}
+[2017-10-17 07:09:24] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"7b08845"}
+[2017-10-17 07:09:24] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"7b08845"}
+[2017-10-17 07:09:24] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7b08845"}
+[2017-10-17 07:10:02] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('Avacado', 'Tropic Fruit', 12, null) [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Changing prefix for price_asc [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: New prefix for price: 9 [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Changing prefix for id_desc [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: New prefix for id_desc: 8 [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Get prefix for id_asc [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Key requested for id_asc: id2_4_11_asc [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Deleting data from cache by key=id2_4_11_asc [] {"uid":"318b3b2"}
+[2017-10-17 07:10:02] vk-test.INFO: Get prefix for id_asc [] {"uid":"8ba23e7"}
+[2017-10-17 07:10:02] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"8ba23e7"}
+[2017-10-17 07:10:02] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"8ba23e7"}
+[2017-10-17 07:10:02] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"8ba23e7"}
+[2017-10-17 07:10:23] vk-test.INFO: Get prefix for id_asc [] {"uid":"cefff9c"}
+[2017-10-17 07:10:23] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"cefff9c"}
+[2017-10-17 07:10:23] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"cefff9c"}
+[2017-10-17 07:10:23] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"cefff9c"}
+[2017-10-17 07:11:15] vk-test.INFO: Get prefix for id_asc [] {"uid":"1232425"}
+[2017-10-17 07:11:15] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"1232425"}
+[2017-10-17 07:11:15] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"1232425"}
+[2017-10-17 07:11:15] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"1232425"}
+[2017-10-17 07:11:21] vk-test.INFO: Get prefix for id_asc [] {"uid":"aca23d5"}
+[2017-10-17 07:11:21] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"aca23d5"}
+[2017-10-17 07:11:21] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"aca23d5"}
+[2017-10-17 07:11:21] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"aca23d5"}
+[2017-10-17 07:11:28] vk-test.INFO: Get prefix for id_asc [] {"uid":"0c28c00"}
+[2017-10-17 07:11:28] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"0c28c00"}
+[2017-10-17 07:11:28] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"0c28c00"}
+[2017-10-17 07:11:28] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"0c28c00"}
+[2017-10-17 07:11:30] vk-test.INFO: Get prefix for id_asc [] {"uid":"27bf53c"}
+[2017-10-17 07:11:30] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"27bf53c"}
+[2017-10-17 07:11:30] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"27bf53c"}
+[2017-10-17 07:11:30] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"27bf53c"}
+[2017-10-17 07:11:33] vk-test.INFO: Get prefix for id_asc [] {"uid":"6f02cf7"}
+[2017-10-17 07:11:33] vk-test.INFO: Key requested for id_asc: id2_4_0_asc [] {"uid":"6f02cf7"}
+[2017-10-17 07:11:33] vk-test.INFO: Get data from cache by key=id2_4_0_asc [] {"uid":"6f02cf7"}
+[2017-10-17 07:11:33] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"6f02cf7"}
+[2017-10-17 07:11:35] vk-test.INFO: Get prefix for id_asc [] {"uid":"31199a1"}
+[2017-10-17 07:11:35] vk-test.INFO: Key requested for id_asc: id2_4_8_asc [] {"uid":"31199a1"}
+[2017-10-17 07:11:35] vk-test.INFO: Get data from cache by key=id2_4_8_asc [] {"uid":"31199a1"}
+[2017-10-17 07:11:35] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"31199a1"}
+[2017-10-17 07:11:37] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=11 [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Deleting data from cache by key=total_count [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Changing prefix for id_asc [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Save data into cache for key=id_asc_prefix [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: New prefix for id_asc: 3 [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Changing prefix for id_desc [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: New prefix for id_desc: 9 [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Changing prefix for price_asc [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: New prefix for price: 10 [] {"uid":"abe563a"}
+[2017-10-17 07:11:37] vk-test.INFO: Get prefix for id_asc [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Key requested for id_asc: id3_4_8_asc [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Get data from cache by key=id3_4_8_asc [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Save data into cache for key=id3_4_8_asc [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: count: 14 [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:37] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"cbc0e10"}
+[2017-10-17 07:11:43] vk-test.INFO: Get prefix for id_asc [] {"uid":"fc74441"}
+[2017-10-17 07:11:43] vk-test.INFO: Key requested for id_asc: id3_4_0_asc [] {"uid":"fc74441"}
+[2017-10-17 07:11:43] vk-test.INFO: Get data from cache by key=id3_4_0_asc [] {"uid":"fc74441"}
+[2017-10-17 07:11:43] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"fc74441"}
+[2017-10-17 07:11:43] vk-test.INFO: Save data into cache for key=id3_4_0_asc [] {"uid":"fc74441"}
+[2017-10-17 07:11:43] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"fc74441"}
+[2017-10-17 07:11:47] vk-test.INFO: Get prefix for id_asc [] {"uid":"54d2007"}
+[2017-10-17 07:11:47] vk-test.INFO: Key requested for id_asc: id3_4_4_asc [] {"uid":"54d2007"}
+[2017-10-17 07:11:47] vk-test.INFO: Get data from cache by key=id3_4_4_asc [] {"uid":"54d2007"}
+[2017-10-17 07:11:47] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"54d2007"}
+[2017-10-17 07:11:47] vk-test.INFO: Save data into cache for key=id3_4_4_asc [] {"uid":"54d2007"}
+[2017-10-17 07:11:47] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"54d2007"}
+[2017-10-17 07:11:49] vk-test.INFO: Get prefix for id_asc [] {"uid":"bbbae10"}
+[2017-10-17 07:11:49] vk-test.INFO: Key requested for id_asc: id3_4_8_asc [] {"uid":"bbbae10"}
+[2017-10-17 07:11:49] vk-test.INFO: Get data from cache by key=id3_4_8_asc [] {"uid":"bbbae10"}
+[2017-10-17 07:11:49] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"bbbae10"}
+[2017-10-17 07:11:53] vk-test.INFO: Get prefix for id_asc [] {"uid":"635e9bc"}
+[2017-10-17 07:11:53] vk-test.INFO: Key requested for id_asc: id3_4_0_asc [] {"uid":"635e9bc"}
+[2017-10-17 07:11:53] vk-test.INFO: Get data from cache by key=id3_4_0_asc [] {"uid":"635e9bc"}
+[2017-10-17 07:11:53] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"635e9bc"}
+[2017-10-17 07:12:40] vk-test.INFO: Get prefix for id_asc [] {"uid":"413fa8b"}
+[2017-10-17 07:12:40] vk-test.INFO: Key requested for id_asc: id3_4_4_asc [] {"uid":"413fa8b"}
+[2017-10-17 07:12:40] vk-test.INFO: Get data from cache by key=id3_4_4_asc [] {"uid":"413fa8b"}
+[2017-10-17 07:12:40] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"413fa8b"}
+[2017-10-17 07:12:41] vk-test.INFO: Get prefix for id_asc [] {"uid":"f907a59"}
+[2017-10-17 07:12:41] vk-test.INFO: Key requested for id_asc: id3_4_8_asc [] {"uid":"f907a59"}
+[2017-10-17 07:12:41] vk-test.INFO: Get data from cache by key=id3_4_8_asc [] {"uid":"f907a59"}
+[2017-10-17 07:12:41] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f907a59"}
+[2017-10-17 07:12:47] vk-test.INFO: Get prefix for id_asc [] {"uid":"5d70421"}
+[2017-10-17 07:12:47] vk-test.INFO: Key requested for id_asc: id3_4_0_asc [] {"uid":"5d70421"}
+[2017-10-17 07:12:47] vk-test.INFO: Get data from cache by key=id3_4_0_asc [] {"uid":"5d70421"}
+[2017-10-17 07:12:47] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"5d70421"}
+[2017-10-17 07:12:49] vk-test.INFO: Get prefix for id_asc [] {"uid":"c6f66b0"}
+[2017-10-17 07:12:49] vk-test.INFO: Key requested for id_asc: id3_4_4_asc [] {"uid":"c6f66b0"}
+[2017-10-17 07:12:49] vk-test.INFO: Get data from cache by key=id3_4_4_asc [] {"uid":"c6f66b0"}
+[2017-10-17 07:12:49] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"c6f66b0"}
+[2017-10-17 07:12:50] vk-test.INFO: Get prefix for id_asc [] {"uid":"35d708c"}
+[2017-10-17 07:12:50] vk-test.INFO: Key requested for id_asc: id3_4_8_asc [] {"uid":"35d708c"}
+[2017-10-17 07:12:50] vk-test.INFO: Get data from cache by key=id3_4_8_asc [] {"uid":"35d708c"}
+[2017-10-17 07:12:50] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"35d708c"}
+[2017-10-17 07:14:26] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=15 [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Deleting data from cache by key=total_count [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Changing prefix for id_asc [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Save data into cache for key=id_asc_prefix [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: New prefix for id_asc: 4 [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Changing prefix for id_desc [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: New prefix for id_desc: 10 [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Changing prefix for price_asc [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: New prefix for price: 11 [] {"uid":"3d437bf"}
+[2017-10-17 07:14:26] vk-test.INFO: Get prefix for id_asc [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Key requested for id_asc: id4_4_8_asc [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Get data from cache by key=id4_4_8_asc [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 8 [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Save data into cache for key=id4_4_8_asc [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: count: 13 [] {"uid":"af9dea8"}
+[2017-10-17 07:14:26] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"af9dea8"}
+[2017-10-17 07:14:32] vk-test.INFO: Get prefix for id_asc [] {"uid":"e1688d0"}
+[2017-10-17 07:14:32] vk-test.INFO: Key requested for id_asc: id4_4_0_asc [] {"uid":"e1688d0"}
+[2017-10-17 07:14:32] vk-test.INFO: Get data from cache by key=id4_4_0_asc [] {"uid":"e1688d0"}
+[2017-10-17 07:14:32] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"e1688d0"}
+[2017-10-17 07:14:32] vk-test.INFO: Save data into cache for key=id4_4_0_asc [] {"uid":"e1688d0"}
+[2017-10-17 07:14:32] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"e1688d0"}
+[2017-10-17 07:14:35] vk-test.INFO: Get prefix for id_asc [] {"uid":"10b35f6"}
+[2017-10-17 07:14:35] vk-test.INFO: Key requested for id_asc: id4_4_4_asc [] {"uid":"10b35f6"}
+[2017-10-17 07:14:35] vk-test.INFO: Get data from cache by key=id4_4_4_asc [] {"uid":"10b35f6"}
+[2017-10-17 07:14:35] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 4 [] {"uid":"10b35f6"}
+[2017-10-17 07:14:35] vk-test.INFO: Save data into cache for key=id4_4_4_asc [] {"uid":"10b35f6"}
+[2017-10-17 07:14:35] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"10b35f6"}
+[2017-10-17 07:14:35] vk-test.INFO: Get prefix for id_asc [] {"uid":"74601f2"}
+[2017-10-17 07:14:35] vk-test.INFO: Key requested for id_asc: id4_4_8_asc [] {"uid":"74601f2"}
+[2017-10-17 07:14:35] vk-test.INFO: Get data from cache by key=id4_4_8_asc [] {"uid":"74601f2"}
+[2017-10-17 07:14:35] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"74601f2"}
+[2017-10-17 07:14:37] vk-test.INFO: Get prefix for id_asc [] {"uid":"8189578"}
+[2017-10-17 07:14:37] vk-test.INFO: Key requested for id_asc: id4_4_12_asc [] {"uid":"8189578"}
+[2017-10-17 07:14:37] vk-test.INFO: Get data from cache by key=id4_4_12_asc [] {"uid":"8189578"}
+[2017-10-17 07:14:37] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 12 [] {"uid":"8189578"}
+[2017-10-17 07:14:37] vk-test.INFO: Save data into cache for key=id4_4_12_asc [] {"uid":"8189578"}
+[2017-10-17 07:14:37] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"8189578"}
+[2017-10-17 07:14:39] vk-test.INFO: Get prefix for id_asc [] {"uid":"79b6de1"}
+[2017-10-17 07:14:39] vk-test.INFO: Key requested for id_asc: id4_4_0_asc [] {"uid":"79b6de1"}
+[2017-10-17 07:14:39] vk-test.INFO: Get data from cache by key=id4_4_0_asc [] {"uid":"79b6de1"}
+[2017-10-17 07:14:39] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"79b6de1"}
+[2017-10-17 07:14:42] vk-test.INFO: Get prefix for id_asc [] {"uid":"abafaaf"}
+[2017-10-17 07:14:42] vk-test.INFO: Key requested for id_asc: id4_4_4_asc [] {"uid":"abafaaf"}
+[2017-10-17 07:14:42] vk-test.INFO: Get data from cache by key=id4_4_4_asc [] {"uid":"abafaaf"}
+[2017-10-17 07:14:42] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"abafaaf"}
+[2017-10-17 07:14:43] vk-test.INFO: Get prefix for id_asc [] {"uid":"aaf70d1"}
+[2017-10-17 07:14:43] vk-test.INFO: Key requested for id_asc: id4_4_8_asc [] {"uid":"aaf70d1"}
+[2017-10-17 07:14:43] vk-test.INFO: Get data from cache by key=id4_4_8_asc [] {"uid":"aaf70d1"}
+[2017-10-17 07:14:43] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"aaf70d1"}
+[2017-10-17 07:14:43] vk-test.INFO: Get prefix for id_asc [] {"uid":"84f042d"}
+[2017-10-17 07:14:43] vk-test.INFO: Key requested for id_asc: id4_4_12_asc [] {"uid":"84f042d"}
+[2017-10-17 07:14:43] vk-test.INFO: Get data from cache by key=id4_4_12_asc [] {"uid":"84f042d"}
+[2017-10-17 07:14:43] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"84f042d"}
+[2017-10-17 07:14:45] vk-test.INFO: Get prefix for id_asc [] {"uid":"cbe85e1"}
+[2017-10-17 07:14:45] vk-test.INFO: Key requested for id_asc: id4_4_0_asc [] {"uid":"cbe85e1"}
+[2017-10-17 07:14:45] vk-test.INFO: Get data from cache by key=id4_4_0_asc [] {"uid":"cbe85e1"}
+[2017-10-17 07:14:45] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"cbe85e1"}
+[2017-10-17 07:16:11] vk-test.INFO: Get prefix for id_asc [] {"uid":"27a8fde"}
+[2017-10-17 07:16:11] vk-test.INFO: Key requested for id_asc: id4_4_12_asc [] {"uid":"27a8fde"}
+[2017-10-17 07:16:11] vk-test.INFO: Get data from cache by key=id4_4_12_asc [] {"uid":"27a8fde"}
+[2017-10-17 07:16:11] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"27a8fde"}
+[2017-10-17 07:16:13] vk-test.INFO: Get prefix for id_asc [] {"uid":"60ede1a"}
+[2017-10-17 07:16:13] vk-test.INFO: Key requested for id_asc: id4_4_0_asc [] {"uid":"60ede1a"}
+[2017-10-17 07:16:13] vk-test.INFO: Get data from cache by key=id4_4_0_asc [] {"uid":"60ede1a"}
+[2017-10-17 07:16:13] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"60ede1a"}
+[2017-10-17 07:16:51] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('cucumber', 'vegetable', 3, null) [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Changing prefix for price_asc [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: New prefix for price: 12 [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Changing prefix for id_desc [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: New prefix for id_desc: 11 [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Get prefix for id_asc [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Key requested for id_asc: id4_4_10_asc [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Deleting data from cache by key=id4_4_10_asc [] {"uid":"87ce8c9"}
+[2017-10-17 07:16:51] vk-test.INFO: Get prefix for id_asc [] {"uid":"e444f84"}
+[2017-10-17 07:16:51] vk-test.INFO: Key requested for id_asc: id4_4_0_asc [] {"uid":"e444f84"}
+[2017-10-17 07:16:51] vk-test.INFO: Get data from cache by key=id4_4_0_asc [] {"uid":"e444f84"}
+[2017-10-17 07:16:51] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"e444f84"}
+[2017-10-17 07:16:58] vk-test.INFO: Get prefix for id_asc [] {"uid":"7bfef78"}
+[2017-10-17 07:16:58] vk-test.INFO: Key requested for id_asc: id4_4_12_asc [] {"uid":"7bfef78"}
+[2017-10-17 07:16:58] vk-test.INFO: Get data from cache by key=id4_4_12_asc [] {"uid":"7bfef78"}
+[2017-10-17 07:16:58] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7bfef78"}
+[2017-10-17 07:23:19] vk-test.INFO: Insert product. SQL: Delete From products WHERE id=17 [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Changing prefix for id_asc [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Save data into cache for key=id_asc_prefix [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: New prefix for id_asc: 5 [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Changing prefix for id_desc [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: New prefix for id_desc: 12 [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Changing prefix for price_asc [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: New prefix for price: 13 [] {"uid":"ba04b95"}
+[2017-10-17 07:23:19] vk-test.INFO: Get prefix for id_asc [] {"uid":"f06c179"}
+[2017-10-17 07:23:19] vk-test.INFO: Key requested for id_asc: id5_4_12_asc [] {"uid":"f06c179"}
+[2017-10-17 07:23:19] vk-test.INFO: Get data from cache by key=id5_4_12_asc [] {"uid":"f06c179"}
+[2017-10-17 07:23:19] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 12 [] {"uid":"f06c179"}
+[2017-10-17 07:23:19] vk-test.INFO: Save data into cache for key=id5_4_12_asc [] {"uid":"f06c179"}
+[2017-10-17 07:23:19] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"f06c179"}
+[2017-10-17 07:23:19] vk-test.INFO: count: 13 [] {"uid":"f06c179"}
+[2017-10-17 07:23:22] vk-test.INFO: Get prefix for id_asc [] {"uid":"865c73e"}
+[2017-10-17 07:23:22] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"865c73e"}
+[2017-10-17 07:23:22] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"865c73e"}
+[2017-10-17 07:23:22] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 0 [] {"uid":"865c73e"}
+[2017-10-17 07:23:22] vk-test.INFO: Save data into cache for key=id5_4_0_asc [] {"uid":"865c73e"}
+[2017-10-17 07:23:22] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"865c73e"}
+[2017-10-17 07:23:22] vk-test.INFO: count: 13 [] {"uid":"865c73e"}
+[2017-10-17 07:23:23] vk-test.INFO: Get prefix for id_asc [] {"uid":"a55dae6"}
+[2017-10-17 07:23:23] vk-test.INFO: Key requested for id_asc: id5_4_12_asc [] {"uid":"a55dae6"}
+[2017-10-17 07:23:23] vk-test.INFO: Get data from cache by key=id5_4_12_asc [] {"uid":"a55dae6"}
+[2017-10-17 07:23:23] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"a55dae6"}
+[2017-10-17 07:23:23] vk-test.INFO: count: 13 [] {"uid":"a55dae6"}
+[2017-10-17 07:23:25] vk-test.INFO: Get prefix for id_asc [] {"uid":"0885944"}
+[2017-10-17 07:23:25] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"0885944"}
+[2017-10-17 07:23:25] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"0885944"}
+[2017-10-17 07:23:25] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"0885944"}
+[2017-10-17 07:23:25] vk-test.INFO: count: 13 [] {"uid":"0885944"}
+[2017-10-17 07:23:57] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('Mango', 'Tropic fruit', 15, null) [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Changing prefix for price_asc [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: New prefix for price: 14 [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Changing prefix for id_desc [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: New prefix for id_desc: 13 [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: count: 14 [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Get prefix for id_asc [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Key requested for id_asc: id5_4_10_asc [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Deleting data from cache by key=id5_4_10_asc [] {"uid":"c1c1617"}
+[2017-10-17 07:23:57] vk-test.INFO: Get prefix for id_asc [] {"uid":"c1a4624"}
+[2017-10-17 07:23:57] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"c1a4624"}
+[2017-10-17 07:23:57] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"c1a4624"}
+[2017-10-17 07:23:57] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"c1a4624"}
+[2017-10-17 07:23:57] vk-test.INFO: count: 14 [] {"uid":"c1a4624"}
+[2017-10-17 07:25:37] vk-test.INFO: Get prefix for id_asc [] {"uid":"bcf799a"}
+[2017-10-17 07:25:37] vk-test.INFO: Key requested for id_asc: id5_4_12_asc [] {"uid":"bcf799a"}
+[2017-10-17 07:25:37] vk-test.INFO: Get data from cache by key=id5_4_12_asc [] {"uid":"bcf799a"}
+[2017-10-17 07:25:37] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"bcf799a"}
+[2017-10-17 07:25:37] vk-test.INFO: count: 14 [] {"uid":"bcf799a"}
+[2017-10-17 07:25:40] vk-test.INFO: Get prefix for id_asc [] {"uid":"1467822"}
+[2017-10-17 07:25:40] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"1467822"}
+[2017-10-17 07:25:40] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"1467822"}
+[2017-10-17 07:25:40] vk-test.INFO: Get products count. SQL: Select count(id) as productCount From products [] {"uid":"1467822"}
+[2017-10-17 07:25:40] vk-test.INFO: count: 14 [] {"uid":"1467822"}
+[2017-10-17 07:31:39] vk-test.INFO: Get prefix for id_asc [] {"uid":"aa4e52f"}
+[2017-10-17 07:31:39] vk-test.INFO: Key requested for id_asc: id5_4_12_asc [] {"uid":"aa4e52f"}
+[2017-10-17 07:31:39] vk-test.INFO: Get data from cache by key=id5_4_12_asc [] {"uid":"aa4e52f"}
+[2017-10-17 07:31:39] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"aa4e52f"}
+[2017-10-17 07:31:46] vk-test.INFO: Get prefix for id_asc [] {"uid":"4b63d0e"}
+[2017-10-17 07:31:46] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"4b63d0e"}
+[2017-10-17 07:31:46] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"4b63d0e"}
+[2017-10-17 07:31:46] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"4b63d0e"}
+[2017-10-17 07:32:15] vk-test.INFO: Insert product. SQL: INSERT INTO products (name, description, price, url) VALUES ('Avacado', 'Tropic', 77, null) [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Save data into cache for key=total_count [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Changing prefix for price_asc [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Save data into cache for key=price_prefix [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: New prefix for price: 15 [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Changing prefix for id_desc [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Save data into cache for key=id_desc_prefix [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: New prefix for id_desc: 14 [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Get prefix for id_asc [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Key requested for id_asc: id5_4_12_asc [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Deleting data from cache by key=id5_4_12_asc [] {"uid":"108ebaa"}
+[2017-10-17 07:32:15] vk-test.INFO: Get prefix for id_asc [] {"uid":"ef8c145"}
+[2017-10-17 07:32:15] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"ef8c145"}
+[2017-10-17 07:32:15] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"ef8c145"}
+[2017-10-17 07:32:15] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"ef8c145"}
+[2017-10-17 07:32:18] vk-test.INFO: Get prefix for id_asc [] {"uid":"f111212"}
+[2017-10-17 07:32:18] vk-test.INFO: Key requested for id_asc: id5_4_12_asc [] {"uid":"f111212"}
+[2017-10-17 07:32:18] vk-test.INFO: Get data from cache by key=id5_4_12_asc [] {"uid":"f111212"}
+[2017-10-17 07:32:18] vk-test.INFO: Fetching list of products sorted by id from database. SQL: Select * From products order by id asc limit 4 offset 12 [] {"uid":"f111212"}
+[2017-10-17 07:32:18] vk-test.INFO: Save data into cache for key=id5_4_12_asc [] {"uid":"f111212"}
+[2017-10-17 07:32:18] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"f111212"}
+[2017-10-17 07:33:22] vk-test.INFO: Get prefix for id_asc [] {"uid":"b80cc4a"}
+[2017-10-17 07:33:22] vk-test.INFO: Key requested for id_asc: id5_4_0_asc [] {"uid":"b80cc4a"}
+[2017-10-17 07:33:22] vk-test.INFO: Get data from cache by key=id5_4_0_asc [] {"uid":"b80cc4a"}
+[2017-10-17 07:33:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"b80cc4a"}
+[2017-10-17 07:33:26] vk-test.INFO: Get prefix for price_asc [] {"uid":"7eec198"}
+[2017-10-17 07:33:26] vk-test.INFO: Key requested for price_asc: price15_4_0_asc [] {"uid":"7eec198"}
+[2017-10-17 07:33:26] vk-test.INFO: Get data from cache by key=price15_4_0_asc [] {"uid":"7eec198"}
+[2017-10-17 07:33:26] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 0 [] {"uid":"7eec198"}
+[2017-10-17 07:33:26] vk-test.INFO: Save data into cache for key=price15_4_0_asc [] {"uid":"7eec198"}
+[2017-10-17 07:33:26] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"7eec198"}
+[2017-10-17 07:33:38] vk-test.INFO: Get prefix for price_asc [] {"uid":"54c1486"}
+[2017-10-17 07:33:38] vk-test.INFO: Key requested for price_asc: price15_4_4_asc [] {"uid":"54c1486"}
+[2017-10-17 07:33:38] vk-test.INFO: Get data from cache by key=price15_4_4_asc [] {"uid":"54c1486"}
+[2017-10-17 07:33:38] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 4 [] {"uid":"54c1486"}
+[2017-10-17 07:33:38] vk-test.INFO: Save data into cache for key=price15_4_4_asc [] {"uid":"54c1486"}
+[2017-10-17 07:33:38] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"54c1486"}
+[2017-10-17 07:33:45] vk-test.INFO: Get prefix for price_asc [] {"uid":"a7e53d1"}
+[2017-10-17 07:33:45] vk-test.INFO: Key requested for price_asc: price15_4_8_asc [] {"uid":"a7e53d1"}
+[2017-10-17 07:33:45] vk-test.INFO: Get data from cache by key=price15_4_8_asc [] {"uid":"a7e53d1"}
+[2017-10-17 07:33:45] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 8 [] {"uid":"a7e53d1"}
+[2017-10-17 07:33:45] vk-test.INFO: Save data into cache for key=price15_4_8_asc [] {"uid":"a7e53d1"}
+[2017-10-17 07:33:45] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"a7e53d1"}
+[2017-10-17 07:33:48] vk-test.INFO: Get prefix for price_asc [] {"uid":"6993cd8"}
+[2017-10-17 07:33:48] vk-test.INFO: Key requested for price_asc: price15_4_12_asc [] {"uid":"6993cd8"}
+[2017-10-17 07:33:48] vk-test.INFO: Get data from cache by key=price15_4_12_asc [] {"uid":"6993cd8"}
+[2017-10-17 07:33:48] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price asc limit 4 offset 12 [] {"uid":"6993cd8"}
+[2017-10-17 07:33:48] vk-test.INFO: Save data into cache for key=price15_4_12_asc [] {"uid":"6993cd8"}
+[2017-10-17 07:33:48] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"6993cd8"}
+[2017-10-17 07:34:11] vk-test.INFO: Get prefix for price_desc [] {"uid":"00fb844"}
+[2017-10-17 07:34:11] vk-test.INFO: Key requested for price_desc: price15_4_12_desc [] {"uid":"00fb844"}
+[2017-10-17 07:34:11] vk-test.INFO: Get data from cache by key=price15_4_12_desc [] {"uid":"00fb844"}
+[2017-10-17 07:34:11] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 12 [] {"uid":"00fb844"}
+[2017-10-17 07:34:11] vk-test.INFO: Save data into cache for key=price15_4_12_desc [] {"uid":"00fb844"}
+[2017-10-17 07:34:11] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"00fb844"}
+[2017-10-17 07:34:19] vk-test.INFO: Get prefix for price_desc [] {"uid":"d354a06"}
+[2017-10-17 07:34:19] vk-test.INFO: Key requested for price_desc: price15_4_0_desc [] {"uid":"d354a06"}
+[2017-10-17 07:34:19] vk-test.INFO: Get data from cache by key=price15_4_0_desc [] {"uid":"d354a06"}
+[2017-10-17 07:34:19] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 0 [] {"uid":"d354a06"}
+[2017-10-17 07:34:19] vk-test.INFO: Save data into cache for key=price15_4_0_desc [] {"uid":"d354a06"}
+[2017-10-17 07:34:19] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"d354a06"}
+[2017-10-17 07:34:21] vk-test.INFO: Get prefix for price_desc [] {"uid":"36a0135"}
+[2017-10-17 07:34:21] vk-test.INFO: Key requested for price_desc: price15_4_4_desc [] {"uid":"36a0135"}
+[2017-10-17 07:34:21] vk-test.INFO: Get data from cache by key=price15_4_4_desc [] {"uid":"36a0135"}
+[2017-10-17 07:34:21] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 4 [] {"uid":"36a0135"}
+[2017-10-17 07:34:21] vk-test.INFO: Save data into cache for key=price15_4_4_desc [] {"uid":"36a0135"}
+[2017-10-17 07:34:21] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"36a0135"}
+[2017-10-17 07:34:22] vk-test.INFO: Get prefix for price_desc [] {"uid":"2547e4a"}
+[2017-10-17 07:34:22] vk-test.INFO: Key requested for price_desc: price15_4_8_desc [] {"uid":"2547e4a"}
+[2017-10-17 07:34:22] vk-test.INFO: Get data from cache by key=price15_4_8_desc [] {"uid":"2547e4a"}
+[2017-10-17 07:34:22] vk-test.INFO: Fetching list of products sorted by price from database. SQL: Select * From products order by price desc limit 4 offset 8 [] {"uid":"2547e4a"}
+[2017-10-17 07:34:22] vk-test.INFO: Save data into cache for key=price15_4_8_desc [] {"uid":"2547e4a"}
+[2017-10-17 07:34:22] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"2547e4a"}
+[2017-10-17 07:34:23] vk-test.INFO: Get prefix for price_desc [] {"uid":"9874f7f"}
+[2017-10-17 07:34:23] vk-test.INFO: Key requested for price_desc: price15_4_12_desc [] {"uid":"9874f7f"}
+[2017-10-17 07:34:23] vk-test.INFO: Get data from cache by key=price15_4_12_desc [] {"uid":"9874f7f"}
+[2017-10-17 07:34:23] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"9874f7f"}
+[2017-10-17 07:34:25] vk-test.INFO: Get prefix for price_desc [] {"uid":"e2bcf80"}
+[2017-10-17 07:34:25] vk-test.INFO: Key requested for price_desc: price15_4_0_desc [] {"uid":"e2bcf80"}
+[2017-10-17 07:34:25] vk-test.INFO: Get data from cache by key=price15_4_0_desc [] {"uid":"e2bcf80"}
+[2017-10-17 07:34:25] vk-test.INFO: Get data from cache by key=total_count [] {"uid":"e2bcf80"}

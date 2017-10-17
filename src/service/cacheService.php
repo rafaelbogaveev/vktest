@@ -8,11 +8,6 @@
 
 require_once (__DIR__ . '/../data/memcached.php');
 
-//key for storing prefix for sorted by price pages
-define('price_prefix_key', 'price_prefix');
-
-//key for storing prefix for sorted by id pages
-define('id_prefix_desc_key', 'id_desc_prefix');
 
 
 /**
@@ -53,7 +48,7 @@ function deleteByKey($key){
     global $app;
     $logger = $app->getContainer()->get('logger');
 
-    $logger->info("Delete data from cache by key=".$key);
+    $logger->info("Deleting data from cache by key=".$key);
 
     $memcached->delete($key);
 }
@@ -68,8 +63,13 @@ function deleteByKey($key){
  * @return string
  */
 function getKeyForPage($orderField, $limit, $offset, $orderType){
+    global $app;
+    $logger = $app->getContainer()->get('logger');
+
     $prefix = getKeyPrefix($orderField, $orderType);
     $key = $prefix.'_'.$limit.'_'.$offset.'_'.$orderType;
+
+    $logger->info('Key requested for '.$orderField.'_'.$orderType.': '.$key);
 
     return $key;
 }
@@ -79,50 +79,76 @@ function getKeyForPage($orderField, $limit, $offset, $orderType){
  * @param $orderField
  * @param $orderType
  */
-function getKeyPrefix($orderField, $orderType){
-    require (__DIR__.'/../data/memcached.php');
+function getKeyPrefix($orderField, $orderType)
+{
+    require(__DIR__ . '/../data/memcached.php');
 
-    if ('price' == $orderField){
+    global $app;
+    $logger = $app->getContainer()->get('logger');
+    $logger->info('Get prefix for '.$orderField.'_'.$orderType);
+
+    //
+    if (price_field == $orderField) {
         $lastId = $memcached->get(price_prefix_key);
-        if (null == $lastId){
-            $lastId =1;
+        if (null == $lastId) {
+            $lastId = 1;
             saveValueByKey(price_prefix_key, $lastId);
         }
 
-        return $orderField.$lastId;
+        return $orderField . $lastId;
     }
 
-    if ('id' == $orderField && 'desc'==$orderType){
+    if (id_field == $orderField && desc == $orderType) {
         $lastId = $memcached->get(id_prefix_desc_key);
-        if (null == $lastId){
-            $lastId =1;
+        if (null == $lastId) {
+            $lastId = 1;
             saveValueByKey(id_prefix_desc_key, $lastId);
         }
 
-        return $orderField.$lastId;
+        return $orderField . $lastId;
     }
 
-    return $orderField;
+    $lastId = $memcached->get(id_prefix_asc_key);
+    if (null == $lastId) {
+        $lastId = 1;
+        saveValueByKey(id_prefix_desc_key, $lastId);
+    }
+
+    return $orderField . $lastId;
 }
 
 /**
  * @param $orderField
+ * @param $orderType
  */
-function changeKeyPrefix($orderField)
+function changeKeyPrefix($orderField, $orderType)
 {
     require(__DIR__ . '/../data/memcached.php');
+    global $app;
+    $logger = $app->getContainer()->get('logger');
+    $logger->info('Changing prefix for '.$orderField.'_'.$orderType);
 
-    if ('price' == $orderField) {
+    if (price_field == $orderField) {
         $lastId = $memcached->get(price_prefix_key);
 
         $lastId = null == $lastId ? 1 : $lastId + 1;
         saveValueByKey(price_prefix_key, $lastId);
+        $logger->info('New prefix for '.$orderField.': '.$lastId);
     }
 
-    if ('id' == $orderField) {
+    if (id_field == $orderField && desc == $orderType) {
         $lastId = $memcached->get(id_prefix_desc_key);
 
         $lastId = null == $lastId ? 1 : $lastId + 1;
         saveValueByKey(id_prefix_desc_key, $lastId);
+        $logger->info('New prefix for '.$orderField.'_'.$orderType.': '.$lastId);
+    }
+
+    if (id_field == $orderField && asc == $orderType) {
+        $lastId = $memcached->get(id_prefix_asc_key);
+
+        $lastId = null == $lastId ? 1 : $lastId + 1;
+        saveValueByKey(id_prefix_asc_key, $lastId);
+        $logger->info('New prefix for ' . $orderField . '_' . $orderType . ': ' . $lastId);
     }
 }
