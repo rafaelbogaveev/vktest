@@ -12,6 +12,7 @@
 require_once ('dbService.php');
 require_once ('cacheService.php');
 
+
 //key for storing total number of products in cache
 define("count_key", 'total_count');
 
@@ -40,75 +41,90 @@ define('desc', 'desc');
  * @param $orderField - name of field that should be sorted. 'price' - sorting by price, otherwise-sorting by id
  * @param $orderType - type of sorting (asc, desc). 'desc' - sorting by desc, otherwise- sorting by asc
  */
-function getProducts($limit, $offset, $orderField, $orderType){
-    require (__DIR__ . '/../data/db.php');
+function getProducts($limit, $offset, $orderField, $orderType)
+{
+    require(__DIR__ . '/../data/db.php');
 
-    $orderType = $orderType==desc ? $orderType: asc;
+    $orderType = $orderType == desc ? $orderType : asc;
     $orderField = price_field == $orderField ? $orderField : id_field;
 
-    //form key by page requested parameters
+    //form key by requested parameters
     $key = getKeyForPage($orderField, $limit, $offset, $orderType);
 
     //get data from cache by key
     $products = getValueByKey($key, $orderType);
 
     //if data exists then return it
-    if (null != $products  && 0<count($products))
+    if (null != $products && 0 < count($products)) {
         return $products;
+    }
 
     $products = price_field == $orderField ? getProductsSortedByPrice($limit, $offset, $orderType)
-                                       : getProductsSortedById($limit, $offset, $orderType);
+        : getProductsSortedById($limit, $offset, $orderType);
 
     //save list of products to cache
     saveValueByKey($key, $products);
+
+    //only for list sorted by id
+    if (id_field == $orderField) {
+        saveMapIdToOrder($products, $offset, $orderType);
+    }
 
     return $products;
 }
 
 /**
- * @param $id
- * @param $name
- * @param $description
- * @param $price
- * @param $url
+ * Saves fields of product into database
+ *
+ * @param $id unuque identifier of product
+ * @param $name name of product
+ * @param $description  text, describing product's details
+ * @param $price double number
+ * @param $url link to image url
  */
-function save($id, $name, $description, $price, $url, $limit, $offset, $orderField, $orderType){
-    if (null == $id) {
-        insertProduct($name, $description, $price, $url);
+function save($id, $name, $description, $price, $url, $limit){
+    require (__DIR__ . '/../data/db.php');
+    $mysqli->autocommit(FALSE);
 
-        incTotalCount();
-        refreshPages(price_field, asc);
-        refreshPages(id_field, desc);
-        refreshLastPageSortedByIdAsc($limit);
+    if (null == $id) {
+        insertProduct($name, $description, $price, $url, $mysqli);
+
+        deleteByKey(count_key);
+        clearCachePages(price_field, asc);
+        clearCachePages(id_field, desc);
+        clearLastPageSortedByIdAsc($limit);
     }
     else{
-        updateProduct($id, $name, $description, $price, $url);
-        refreshPages(price_field, asc);
+        updateProduct($id, $name, $description, $price, $url, $mysqli);
+        clearCachePages(price_field, asc);
+        clearUpdatedProductPageSortedById($id, $limit);
     }
+
+    $mysqli->commit();
 }
 
 
 /**
- * @param $id
- * @param $limit
- * @param $offset
- * @param $orderField
- * @param $orderType
+ *Deletes product from database by id
+ *
+ * @param $id - unique identifier of product
  * @throws Exception
  */
-function delete($id, $limit, $offset, $orderField, $orderType){
+function delete($id){
+    require (__DIR__ . '/../data/db.php');
+
     if (null ==  $id)
         throw new Exception('Id cannot be null');
 
-    deleteProduct($id);
+    $mysqli->autocommit(FALSE);
+    deleteProduct($id, $mysqli);
 
-    // we cannot be sure whether element with id exists
     deleteByKey(count_key);
+    clearCachePages(price_field, asc);
+    clearCachePages(id_field, desc);
+    clearCachePages(id_field, asc);
 
-    //refresh pages.
-    refreshPages(id_field, asc);
-    refreshPages(id_field, desc);
-    refreshPages(price_field, asc);
+    $mysqli->commit();
 }
 
 
@@ -132,26 +148,83 @@ function getCount(){
 }
 
 /**
+ * Save to cache relation of each product id to order in database
  *
+ * @param $products list of products
+ * @param $limit maximum amount of element in page, needs to calculate current page
+ * @param $offset offset from first element in db, needs to calculate current page
  */
-function refreshPages($orderField, $orderType){
+function saveMapIdToOrder($products, $offset, $orderType)
+{
+    $totalCount = getCount();
+
+    foreach ($products as $index => $product) {
+        // we need to save order of product in ascending type of sorting
+        $value = desc == $orderType ? $totalCount - ($offset + $index) : $offset + $index+1;
+        saveValueByKey($product['id'], $value);
+    }
+}
+
+
+/**
+ * Changes prefixes of keys for pages
+ *
+ * @param $orderField
+ * @param $orderType
+ */
+function clearCachePages($orderField, $orderType){
     changeKeyPrefix($orderField, $orderType);
 }
 
-function refreshLastPageSortedByIdAsc($limit)
+/**
+ *
+ *
+ * @param $limit
+ */
+function clearLastPageSortedByIdAsc($limit)
 {
     $count = getCount();
-    $page = ceil($count / $limit);
-    $offset = $limit * ($page - 1);
+    $lastPage = ceil($count / $limit);
+    $offset = $limit * ($lastPage - 1);
     $key = getKeyForPage(id_field, $limit, $offset,asc);
     deleteByKey($key);
 }
 
+/**
+ * Clears pages for sorted by id list for specified product $id
+ *
+ * @param $id
+ */
+function clearUpdatedProductPageSortedById($id, $limit)
+{
+    global $app;
 
-function incTotalCount(){
-    $count = getValueByKey(count_key);
-    if (null != $count) {
-        saveValueByKey(count_key, $count + 1);
-    }
+    // resolving logger
+    $logger = $app->getContainer()->get('logger');
+
+    $logger->info('------Clear pages for updates item------');
+
+    //number of page for product with id in a list sorted by id field by asc
+    $itemOrder = getValueByKey($id);
+
+    if (null == $itemOrder)
+        return;
+
+    $totalCount = getCount();
+    $logger->info('count:'.$totalCount);
+    $logger->info('itemOrder:'.$itemOrder);
+
+    //number of page for product with id in a list sorted by id field by desc
+    $descItemOrder = $totalCount - $itemOrder + 1;
+    $logger->info('descItemOrder:'.$descItemOrder);
+
+    $offset = $limit * floor(($itemOrder-1)/$limit);
+    $logger->info('offset asc:'.$offset);
+    $key = getKeyForPage(id_field, $limit, $offset, asc);
+    deleteByKey($key);
+
+    $offset = $limit * floor(($descItemOrder-1)/$limit);
+    $logger->info('offset desc:'.$offset);
+    $key = getKeyForPage(id_field, $limit, $offset, desc);
+    deleteByKey($key);
 }
-

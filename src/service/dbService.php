@@ -9,20 +9,20 @@
 
 
 /**
+ * Gets list of products from database sorted by id field
  *
- *
- * @param $lastId
- * @param $limit
- * @param $orderType
+ * @param $limit - max amount of products that should be returned
+ * @param $offset - amount of first items in query that should be omitted
+ * @param $orderType - type of sorting (asc, desc). 'desc' - sorting by desc, otherwise- sorting by asc
  * @return array of db rows
  */
-function getProductsSortedById($limit, $offset, $order){
+function getProductsSortedById($limit, $offset, $orderType){
     require (__DIR__.'/../data/db.php');
     global $app;
 
     $logger = $app->getContainer()->get('logger');
 
-    $query = 'Select * From products order by id '.$order.' limit '.$limit.' offset '.$offset;
+    $query = 'Select id, name, ifnull(description, \'\') as description, price, ifnull(url,\'\') as url From products order by id '.$orderType.' limit '.$limit.' offset '.$offset;
     $result = $mysqli->query($query);
 
     $logger->info("Fetching list of products sorted by id from database. SQL: ".$query);
@@ -37,29 +37,30 @@ function getProductsSortedById($limit, $offset, $order){
 
 
 /**
- * Gets array of products row sorted by price
+ * Gets array of products row sorted by price field
  *
  * @param $limit - max amount of products that should be returned
  * @param $offset - amount of first items in query that should be omitted
  * @param $orderType - type of sorting (asc, desc). 'desc' - sorting by desc, otherwise- sorting by asc
  * @return array of db rows
  */
-function getProductsSortedByPrice($limit, $offset, $orderType) {
-    require (__DIR__.'/../data/db.php');
+function getProductsSortedByPrice($limit, $offset, $orderType)
+{
+    require(__DIR__ . '/../data/db.php');
     global $app;
 
     // resolving logger
     $logger = $app->getContainer()->get('logger');
 
-    $order = 'desc'==$orderType ? $orderType: 'asc';
-    $query = 'Select * From products order by price '.$order.' limit '.$limit.' offset '.$offset;
+    $order = 'desc' == $orderType ? $orderType : 'asc';
+    $query = 'SELECT id, name, ifnull(description, \'\') AS description, price, ifnull(url,\'\') AS url FROM products ORDER BY price ' . $order . ' LIMIT ' . $limit . ' OFFSET ' . $offset;
 
-    $logger->info("Fetching list of products sorted by price from database. SQL: ".$query);
+    $logger->info("Fetching list of products sorted by price from database. SQL: " . $query);
     $result = $mysqli->query($query);
 
-    $data=null;
-    while($row = $result->fetch_assoc()) {
-        $data[]=$row;
+    $data = null;
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
     }
 
     return $data;
@@ -88,6 +89,8 @@ function getProductById($id){
 
 
 /**
+ *
+ *
  * @param $id
  * @param $name
  * @param $description
@@ -95,9 +98,8 @@ function getProductById($id){
  * @param $url
  * @return bool
  */
-function updateProduct($id, $name, $description, $price, $url)
+function updateProduct($id, $name, $description, $price, $url, $mysqli)
 {
-    require (__DIR__.'/../data/db.php');
     global $app;
 
     $queryFormat = 'UPDATE products SET name=%s, description=%s, price=%s, url=%s WHERE id=%d';
@@ -123,9 +125,8 @@ function updateProduct($id, $name, $description, $price, $url)
  * @param $price
  * @param $url
  */
-function insertProduct($name, $description, $price, $url)
+function insertProduct($name, $description, $price, $url, $mysqli)
 {
-    require (__DIR__.'/../data/db.php');
     global $app;
 
     $queryFormat = 'INSERT INTO products (name, description, price, url) VALUES (%s, %s, %s, %s)';
@@ -147,8 +148,7 @@ function insertProduct($name, $description, $price, $url)
  * @param $id
  * @return bool
  */
-function deleteProduct($id){
-    require (__DIR__.'/../data/db.php');
+function deleteProduct($id, $mysqli){
     global $app;
 
     $query = 'Delete From products WHERE id='.$id;

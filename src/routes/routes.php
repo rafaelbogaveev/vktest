@@ -68,11 +68,8 @@ $app->put('/api/edit/{id}', function (Request $request, Response $response) {
     $url=$request->getParam('url');
 
     $limit=$request->getParam('limit');
-    $offset=$request->getParam('offset');
-    $orderField=$request->getParam('orderField');
-    $orderType=$request->getParam('orderType');
 
-    save($id, $name, $description, $price, $url, $limit, $offset, $orderField, $orderType);
+    save($id, $name, $description, $price, $url, $limit);
 
     return json_encode(array("status" => "200", "code" => 1));
 });
@@ -80,12 +77,7 @@ $app->put('/api/edit/{id}', function (Request $request, Response $response) {
 $app->delete('/api/delete/{id}', function (Request $request, Response $response){
     $id = $request->getAttribute('id');
 
-    $limit=$request->getParam('limit');
-    $offset=$request->getParam('offset');
-    $orderField=$request->getParam('orderField');
-    $orderType=$request->getParam('orderType');
-
-    delete($id,$limit, $offset, $orderField, $orderType);
+    delete($id);
 
     return json_encode(array("status" => "200", "code" => 1));
 });

@@ -21,9 +21,10 @@ function getValueByKey($key){
    global $app;
    $logger = $app->getContainer()->get('logger');
 
-   $logger->info("Get data from cache by key=".$key);
+   $data = $memcached->get($key);
+   $logger->info("Get data from cache by key=".$key.' value='.$data);
 
-   return $memcached->get($key);
+   return $data;
 }
 
 /**
@@ -35,7 +36,7 @@ function saveValueByKey($key, $data){
     global $app;
     $logger = $app->getContainer()->get('logger');
 
-    $logger->info("Save data into cache for key=".$key);
+    $logger->info("Save data into cache for key=".$key.' value: '.$data);
 
     $memcached->set($key, $data);
 }
@@ -111,13 +112,15 @@ function getKeyPrefix($orderField, $orderType)
     $lastId = $memcached->get(id_prefix_asc_key);
     if (null == $lastId) {
         $lastId = 1;
-        saveValueByKey(id_prefix_desc_key, $lastId);
+        saveValueByKey(id_prefix_asc_key, $lastId);
     }
 
     return $orderField . $lastId;
 }
 
 /**
+ * Changes prefix for key that used to store pages in cache
+ *
  * @param $orderField
  * @param $orderType
  */
@@ -133,7 +136,9 @@ function changeKeyPrefix($orderField, $orderType)
 
         $lastId = null == $lastId ? 1 : $lastId + 1;
         saveValueByKey(price_prefix_key, $lastId);
-        $logger->info('New prefix for '.$orderField.': '.$lastId);
+        $logger->info('New prefix for '.price_prefix_key.': '.$lastId);
+
+        return;
     }
 
     if (id_field == $orderField && desc == $orderType) {
@@ -141,7 +146,9 @@ function changeKeyPrefix($orderField, $orderType)
 
         $lastId = null == $lastId ? 1 : $lastId + 1;
         saveValueByKey(id_prefix_desc_key, $lastId);
-        $logger->info('New prefix for '.$orderField.'_'.$orderType.': '.$lastId);
+        $logger->info('New prefix for '.id_prefix_desc_key.': '.$lastId);
+
+        return;
     }
 
     if (id_field == $orderField && asc == $orderType) {
@@ -149,6 +156,9 @@ function changeKeyPrefix($orderField, $orderType)
 
         $lastId = null == $lastId ? 1 : $lastId + 1;
         saveValueByKey(id_prefix_asc_key, $lastId);
-        $logger->info('New prefix for ' . $orderField . '_' . $orderType . ': ' . $lastId);
+        $logger->info('New prefix for ' . id_prefix_asc_key . ': ' . $lastId);
+
+        return;
     }
 }
+
