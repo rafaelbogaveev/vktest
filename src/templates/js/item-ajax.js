@@ -4,7 +4,7 @@ $( document ).ready(function() {
     var current_page = 1;
     var total_page = 0;
 
-    var limit = 4;
+    var limit = 30;
     var offset = 0;
     var sortField='id';
     var sortType='asc';
@@ -27,7 +27,6 @@ $( document ).ready(function() {
         }).done(function(data){
             total_page = Math.ceil(data.total/limit);
             current_page = page;
-            lastId=data.lastId;
 
             $('#pagination').twbsPagination({
                 totalPages: total_page,
@@ -63,7 +62,6 @@ $( document ).ready(function() {
         }).done(function(data){
             total_page = Math.ceil(data.total/limit);
             current_page = page;
-            lastId=data.lastId;
 
             manageRow(data.products);
         });

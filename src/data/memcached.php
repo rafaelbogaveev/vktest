@@ -10,4 +10,4 @@ global $config;
 $cache_settings = $config['settings']['memcached'];
 
 $memcached = new Memcached;
-$memcached->addServer($cache_settings['host'], $cache_settings['port']) or die ("Не могу подключиться к memcached");
+$memcached->addServer($cache_settings['host'], $cache_settings['port']) or die ("Cannot connect to memcached");

@@ -8,14 +8,13 @@
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
+use \Interop\Container\ContainerInterface as ContainerInterface;
 
 
 
 class ResponseDto
 {
     public $products;
-
-    public $lastId;
 
     public $total;
 }
@@ -35,7 +34,6 @@ $app->get('/api/list', function (Request $request, Response $response) {
     $products = getProducts($limit, $offset, $orderField, $orderType);
     $data = new ResponseDto();
     $data->products = $products;
-    $data->lastId = end($products)['id'];
     $data->total = getCount();
 
     header("Content-Type: application/json");
@@ -50,11 +48,8 @@ $app->post('/api/add', function (Request $request, Response $response){
     $url=$request->getParam('url');
 
     $limit=$request->getParam('limit');
-    $offset=$request->getParam('offset');
-    $orderField=$request->getParam('orderField');
-    $orderType=$request->getParam('orderType');
 
-    save(null, $name, $description, $price, $url, $limit, $offset, $orderField, $orderType);
+    save(null, $name, $description, $price, $url, $limit);
 
     return json_encode(array("status" => "200", "code" => 1));
 });

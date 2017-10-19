@@ -11,9 +11,9 @@ $config = [
         'displayErrorDetails' => true,
 
         'db' => [
-            'host' => 'localhost',
+            'host' => '127.0.0.1',
             'user' => 'root',
-            'password' => 'root',
+            'password' => '1234',
             'dbname' => 'stock'
         ],
 
@@ -26,9 +26,8 @@ $config = [
             'name' => 'vk-test',
             'level' => Monolog\Logger::DEBUG,
             'path' => __DIR__ . '/../../logs/app.log',
-        ],
-
-
-        'page_size' => 30,
+        ]
     ]
 ];
+
+return $config;

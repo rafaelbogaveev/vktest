@@ -10,13 +10,13 @@
 require  '../vendor/autoload.php';
 require_once ('service/productService.php');
 
-//$config = require __DIR__. 'config/prod.config.php'; //for production use
-$config = require __DIR__. '/config/dev.config.php'; // for development use
+$config = require __DIR__. '/config/prod.config.php'; //for production use
+//$config = require __DIR__. '/config/dev.config.php'; // for development use
+
 $app = new \Slim\App($config);
 
 //registering dependencies
 require __DIR__. '/config/dependencies.php';
-
 
 require __DIR__ . '/routes/routes.php';
 

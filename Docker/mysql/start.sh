@@ -1,1 +1,0 @@
-mysql -u root -p1234 /root/db_sql.sql

@@ -8,4 +8,4 @@ CREATE TABLE stock.products (
   url varchar(256)
 );
 
-CREATE INDEX products_price ON products(price);
+CREATE INDEX products_price ON stock.products(price);

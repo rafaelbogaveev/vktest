@@ -89,7 +89,6 @@ function save($id, $name, $description, $price, $url, $limit){
     if (null == $id) {
         insertProduct($name, $description, $price, $url, $mysqli);
 
-        deleteByKey(count_key);
         clearCachePages(price_field, asc);
         clearCachePages(id_field, desc);
         clearLastPageSortedByIdAsc($limit);
@@ -119,7 +118,6 @@ function delete($id){
     $mysqli->autocommit(FALSE);
     deleteProduct($id, $mysqli);
 
-    deleteByKey(count_key);
     clearCachePages(price_field, asc);
     clearCachePages(id_field, desc);
     clearCachePages(id_field, asc);
@@ -134,17 +132,9 @@ function delete($id){
  * @return mixed
  */
 function getCount(){
-    $count = getValueByKey(count_key);
-
-    if (null != $count)
-        return $count;
-
     $count = getProductsCount();
 
-    // save to cache
-    saveValueByKey(count_key, $count);
-
-    return $count;
+    return $count==null ? 0 : $count;
 }
 
 /**

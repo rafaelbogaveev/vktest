@@ -1,0 +1,26 @@
+version: '2'
+services:
+  app:
+    image: rbogaveev/vktest_app:latest
+    container_name: vktest_app
+    depends_on:
+      - app_db
+      - memcached
+    ports:
+      - 80:80
+
+  app_db:
+    image: rbogaveev/vktest_db:latest
+    container_name: vktest_db
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+
+
+  memcached:
+    image: memcached:latest
+    container_name: memcached
+    ports:
+      - 11211:11211
+

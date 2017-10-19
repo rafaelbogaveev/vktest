@@ -23,14 +23,18 @@ function getProductsSortedById($limit, $offset, $orderType){
     $logger = $app->getContainer()->get('logger');
 
     $query = 'Select id, name, ifnull(description, \'\') as description, price, ifnull(url,\'\') as url From products order by id '.$orderType.' limit '.$limit.' offset '.$offset;
-    $result = $mysqli->query($query);
 
     $logger->info("Fetching list of products sorted by id from database. SQL: ".$query);
+    $result = $mysqli->query($query);
+
+
 
     $data=null;
     while($row = $result->fetch_assoc()) {
         $data[]=$row;
     }
+
+    $logger->info("Fetched list of products sorted by id from database. Count: ".count($data));
 
     return $data;
 }
@@ -52,16 +56,20 @@ function getProductsSortedByPrice($limit, $offset, $orderType)
     // resolving logger
     $logger = $app->getContainer()->get('logger');
 
+
     $order = 'desc' == $orderType ? $orderType : 'asc';
     $query = 'SELECT id, name, ifnull(description, \'\') AS description, price, ifnull(url,\'\') AS url FROM products ORDER BY price ' . $order . ' LIMIT ' . $limit . ' OFFSET ' . $offset;
 
-    $logger->info("Fetching list of products sorted by price from database. SQL: " . $query);
+    $logger->info("Fetched list of products sorted by price from database. SQL: " . $query);
+
     $result = $mysqli->query($query);
 
     $data = null;
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
     }
+
+    $logger->info("Fetched list of products sorted by price from database. Count: " . count($data));
 
     return $data;
 }
@@ -167,13 +175,13 @@ function getProductsCount(){
     require (__DIR__.'/../data/db.php');
     global $app;
 
-    $query = 'Select count(id) as productCount From products';
+    $query = 'Select count(id) as count From products';
     $logger = $app->getContainer()->get('logger');
     $logger->info("Get products count. SQL: " . $query);
 
     $result = $mysqli->query($query);
     $row = $result->fetch_assoc();
-    $logger->info("count: " . $row['productCount']);
+    $logger->info("count: " . $row['count']);
 
-    return $row['productCount'];
+    return $row['count'];
 }
