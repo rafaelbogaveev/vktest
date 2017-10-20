@@ -4,7 +4,7 @@ $( document ).ready(function() {
     var current_page = 1;
     var total_page = 0;
 
-    var limit = 30;
+    var limit = 7;
     var offset = 0;
     var sortField='id';
     var sortType='asc';
@@ -25,8 +25,9 @@ $( document ).ready(function() {
                 orderType: sortType
             }
         }).done(function(data){
-            total_page = Math.ceil(data.total/limit);
-            current_page = page;
+            total = data.total;
+            total_page = Math.ceil(total/limit);
+            current_page = total_page == 0 ? 0 : page ;
 
             $('#pagination').twbsPagination({
                 totalPages: total_page,
@@ -60,7 +61,8 @@ $( document ).ready(function() {
                 orderType: sortType
             }
         }).done(function(data){
-            total_page = Math.ceil(data.total/limit);
+            total = data.total;
+            total_page = Math.ceil(total/limit);
             current_page = page;
 
             manageRow(data.products);
@@ -119,7 +121,33 @@ $( document ).ready(function() {
                 $("#create-item").find("textarea[name='description']").val('');
                 $("#create-item").find("input[name='price']").val('');
                 $("#create-item").find("input[name='url']").val('');
-                getPageData();
+
+                var previuosTotal =total;
+                total++;
+                total_page = Math.ceil(total/limit);
+
+                if (previuosTotal>0) {
+                    $('#pagination').twbsPagination('destroy');
+
+
+                    $('#pagination').twbsPagination({
+                        totalPages: total_page,
+                        visiblePages: current_page,
+                        onPageClick: function (event, pageL) {
+                            page = pageL;
+                            offset = (pageL - 1) * limit;
+
+                            if (is_ajax_fire != 0) {
+                                getPageData();
+                            }
+                        }
+                    });
+                }
+                else
+                {
+                    manageData();
+                }
+
                 $(".modal").modal('hide');
                 toastr.success('Item Created Successfully.', 'Success Alert', {timeOut: 5000});
             });
@@ -146,7 +174,32 @@ $( document ).ready(function() {
         }).done(function(data){
             //c_obj.remove();
             toastr.success('Item Deleted Successfully.', 'Success Alert', {timeOut: 5000});
-            getPageData();
+
+            total--;
+            total_page = Math.ceil(total/limit);
+            current_page = current_page>total_page ? total_page: current_page;
+
+
+            $('#pagination').twbsPagination('destroy');
+
+            if (total>0) {
+                $('#pagination').twbsPagination({
+                    totalPages: total_page,
+                    visiblePages: current_page,
+                    onPageClick: function (event, pageL) {
+                        page = pageL;
+                        offset = (pageL - 1) * limit;
+
+                        if (is_ajax_fire != 0) {
+                            getPageData();
+                        }
+                    }
+                });
+            }
+            else {
+                getPageData();
+            }
+
         });
 
     });

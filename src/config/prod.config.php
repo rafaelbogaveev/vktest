@@ -11,14 +11,14 @@ $config = [
         'displayErrorDetails' => true,
 
         'db' => [
-            'host' => '127.0.0.1',
+            'host' => 'app_db',
             'user' => 'root',
             'password' => '1234',
             'dbname' => 'stock'
         ],
 
         'memcached'=>[
-            'host' => '127.0.0.1',
+            'host' => 'memcached',
             'port' => 11211,
         ],
 
